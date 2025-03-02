@@ -13,12 +13,14 @@ wheels/
 .idea
 
 # Experiment-related files
+secret
 ocr/
 pdfs/
 dataset_raw/
 sandbox/
 excel/
 sandbox/
+docs/
 
 # type stub
 typings/
