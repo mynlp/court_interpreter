@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "court-interpreter"
+version = "0.1.0"
+description = ""
+authors = ["gifdog97 <omusubset.s@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.52.0"
+sacrebleu = "^2.4.3"
+pandas = "^2.2.3"
+bert-score = "^0.3.13"
+unbabel-comet = "^2.2.2"
+pytest = "^8.3.3"
+groq = "^0.13.0"
+
+[tool.pytest.ini_options]
+pythonpath = "./court_interpreter"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

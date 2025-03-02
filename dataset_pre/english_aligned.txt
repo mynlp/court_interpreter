@@ -1,0 +1,456 @@
+I. Detention Hearing 
+	1. Introduction 
+				(J) I am a judge of the ______ District Court. 
+				(J) The public prosecutor has applied to this court for your detention.
+				(J) I will recite the alleged facts of the crime, after which you may make a statement about the allegations.
+				(J) First, however, I would like to give you some warnings and information. 
+	2. Notice of the right to remain silent 
+				(J) First, you have the right to remain silent.
+				(J) You may remain silent throughout my questioning, or you may refuse to answer individual questions.
+				(J) It shall not be to your disadvantage to remain silent or to refuse to answer any of my questions. 
+	3. Notice of the right to counsel 
+				(J) Second, you have the right to appoint your defense counsel at your own expense.
+				(J) If you wish to appoint counsel, but do not have any information about defense counsels, the court can help you find an attorney to represent you through a bar association.
+				(J) Do not hesitate to apply to the court to find a counsel. If requested, the court will notify a bar association at your request.
+				【Where the suspect is eligible to apply for a court-appointed defense counsel】
+				(J) If you cannot afford to appoint a defense counsel at your own expense for economic or other reasons, you may request a judge to appoint one.
+				(J) If you wish to make this request, you should first submit a report of financial resources.
+				(J) If you have a total of 500,000 yen or more as your own resources, you should request the Association to appoint a defense counsel beforehand.
+	4. Summary of detention procedures
+				(J) You might be held in detention if the court finds probable cause to suspect that you have committed the crime as along with one or more of the following three factors: One, you have no fixed address. Two, there is probable cause to suspect that you will conceal or destroy evidence. Three, there is probable cause to suspect that you will attempt to flee. 
+	5. Duration of detention 
+				(J) The duration of detention is 10 days in principle.
+				(J) However, depending on the case, you might be released (from custody) before 10 days or the detention might be extended up to another 10 days. 
+	6. Notice of alleged facts of the crime 
+				(J) The following allegations of the facts of the crime constitute the grounds for the request for your detention.
+				(J) Afterwards, you will have an opportunity to make a comment. 
+				(J) "The suspect, at about 6: 50 p.m., on October 10, XXXX, knowingly and intentionally stole a diamond ring (valued at about three million yen) by slipping it inside the inside pocket of his/her jacket at the jewelry department on the third floor of the main store of ______ Department Store (C.E.O. ______ ), located at 1-1 Maruyamacho, City."
+	7. Statement by the suspect concerning the alleged facts of the crime
+				(S) ・ These facts are true in their entirety. 
+				(S) ・ I have nothing to do with these facts. 
+				(S) ・ All I want to say now is what I have said at the public prosecutors office. 
+	8. Notification of detention
+				(J) If you are detained, the court will notify your counsel of your detention.
+				(J) If you do not have your own counsel, the court will notify your spouse, a parent or a sibling in Japan designated by you.
+				(J) If you have neither counsel nor such family members, the court will notify any other person designated by you, such as your employer or acquaintance.
+				(J) Indicate the name, address, and phone number of such person whom the court should notify of your detention. 
+				(S) Please notify my brother in Japan. 
+				(J) What is his name and address? 
+				(S) His name is A.
+				(S) He lives at the same address as I do. 
+	9. Notification to consul
+				(J) Do you, as a national of ______ ,under Article 36 (1) b of the Vienna Convention on Consular Relations, request notification of your detention to be given to the Consul of ______ ?
+				(S) Yes, I do. <No, I don't.>
+				(J) You may send a letter to the Consul in so far as it does not contradict Japanese law. 
+	10. Reading of the written statement of the suspect, signature and seal
+				(C) I have written down what you have said. I will read it aloud.
+				(C) If it is correct, sign here and seal it with your left index finger next to your signature. 
+II. Trial Procedure 
+	1. Convening the court
+				(J) This court is hereby opened.
+	2. Oath by the interpreter
+				(I) I swear, according to my conscience, to interpret faithfully and truly. 
+	3. Question to the defendant for identification
+				(J) Will the defendant please step forward. 
+				(J) <Will the defendant please rise.> 
+				(J) State your name. 
+				(J) State your date of birth. 
+				(J) State your nationality (registered domicile). 
+				(J) State your residential address in Japan. 
+				(J) State your occupation. 
+	4. Reading of the charging sheet
+				(J) The trial is now in session regarding the charge against you of _____ .
+				(J) Have you already received a copy of the charging sheet?
+				(J) Please listen as the prosecutor reads aloud the charging sheet. 
+				(J) Prosecutor, will you please read the charging sheet?
+	5. Notice of the right to remain silent 
+				(J) The court will now hear this case based on the charge against you which has been read by the prosecutor. Be advised of the following points.
+				(J) You have the right to remain silent.
+				(J) You may refuse to answer some of the questions or you may remain silent throughout the trial. 
+				(J) Of course, you may choose to answer any question. However, any statement made by you in this court may be used as evidence either for or against you. Therefore, answer questions keeping this rule in mind. 
+	6. Statement by the defendant concerning the case charged to the court
+				(J) Do you have anything to say in response to the facts just read by the prosecutor? 
+				(D) • The facts are true in their entirety. 
+				(D) • I have nothing to do with these facts. 
+				(D) • I was intoxicated at the time, and do not have a clear recollection of what happened. 
+				(D) • I did, in fact, take the items in question, but I killed no one. 
+				(D) • I did, in fact, stab the victim, but I did not intend to kill him/her. 
+	7. Defense Counsel's opinion 
+				(DC) • The statement given by the defendant is entirely true. 
+				(DC) • The defendant is not guilty on the grounds that he/she did not have the intention to steal. 
+				(DC) • The defendant is not guilty on the grounds that he/she had not even commenced the commission of the crime of theft so charged. 
+				(DC) • The defendant is not guilty on the grounds of self-defense. 
+	8. Public prosecutor's opening statement 
+				(J) Prosecutor, please make your opening statement.
+				(J) Defendant, please listen to the prosecutor's opening statement in which the prosecution will outline the facts they intend to prove with evidence. 
+				(P) The facts which we intend to prove with evidence are as follows: 
+				(P) The defendant.... 
+	9. Defense counsel's opening statement 
+				【The defense counsel is necessarily allowed to make an opening statement if the case has been subject to the pretrial conference procedure and the defense counsel has something to say at this stage; however, this procedure is rarely held when the pretrial conference procedure has not been performed.】
+				(J) Defense counsel, please make your opening statement. 
+				(DC) I will make an opening statement as the defense counsel.
+				(DC) The defendant did not commit the crime as charged, so he/she is not guilty.
+				(DC) That is, ..... 
+	10. Disclosure of the results of the pretrial conference procedure 
+				【Where the pretrial conference procedure has been performed】
+				(J) The court moves on to the procedure to disclose the results of the pretrial conference procedure.
+				(J) Through the pretrial conference procedure performed by the court, the public prosecutor, and the defense counsel, the following two points at issue have been clarified.
+				(J) The first point is....
+	11. Request for examination of the evidence 
+				(P) To prove these facts, I request the court to admit the evidence listed in the Evidence Card(s) (A, B). 
+	12. Opinion of the defense concerning the prosecutor's request for examination of the evidence (documentary evidence and other articles of evidence) 
+				(J) Defense counsel, do you have any objections? 
+				(DC) • No, your honor, we consent to all of the evidence as admissible. 
+				(DC) • Yes, your honor. We do not consent to the admission of Exhibit A3 and A4, the written statements of Eyewitness A to the prosecutor and to a judicial police officer. We consent to the rest of the evidence as requested. 
+				(DC) • We have no objections to the articles of evidence being admissible. 
+				(DC) • We question the voluntariness of Exhibit B3, the written statement of the defendant to a judicial police officer, because it was recorded under threat by the officer. 
+				(DC) • We question the credibility of Exhibit B5, the written statement of the defendant to a judicial police officer, because the defendant was attempting at that time to protect his/her accomplice. 
+				(DC) • We are still in the process of evaluating Exhibit B9, the written statement of the defendant to a prosecutor.
+				(DC) We would like to reserve comment at this time. 
+	13. Summary of the documentary evidence and exhibition of the articles of evidence. 
+				(J) I hereby admit the articles of evidence that the defense has consented to as evidence and rule that they now be examined.
+				(J) Prosecutor, will you please summarize the documentary evidence and show the exhibit(s), which have been admitted? 
+				(J) Defendant, listen to the prosecutor as he/she reads the summary of the documentary evidence. 
+				(P) • Exhibit A1 is an investigative report filed by judicial police officers. This report gives the present immigration status of the defendant. Quote, "The defendant entered Japan from Country Y on October 14, XXXX with the status of residence as a temporary visitor allowed to stay for a period of 90 days. He was allowed to stay in Japan until January 12, XXXX. So far no extension of the period has been granted," unquote. 
+				(P) • Exhibit A2 is a written statement of the defendant's fiancée, Hanako Kouno, to judicial police officers. It relates information about the defendant's living conditions and lifestyle. 
+				(P) • Exhibit B1 is a written statement of the defendant to judicial police officers. It relates information about his family background, personal history, etc. 
+				(P) • Exhibit B2 and B3 are also written statements of the defendant to judicial police officers; Exhibit B4 is a written statement of the defendant to a prosecutor. 
+				(P) Exhibit B2, B3 and B4 are the defendant's written statements on his criminal involvement in the present case.
+				(P) To summarize these statements, I quote from Exhibit B4, "I came to Japan from Country Y on October 14, XXXX for the purpose of finding employment and earning money here.
+				(P) I was first employed at Suzuki Construction Company, then I worked at Tanaka Construction Company.
+				(P) I knew that I was allowed to stay in Japan just until January 12, XXXX, but I chose to remain in Japan for the purpose of earning money." 
+				(P) • Exhibit B5 is an investigative report concerning the defendant's family background. 
+	14. Request for examination of a witness 
+				(J) Prosecutor, how will you proceed concerning the evidence to which the defense did not consent? 
+				(P) I withdraw the evidence, your honor, and now request to examine A as a witness. 
+	15. Opinion concerning the request for examination of a witness and the ruling of admission 
+				(J) Defense Counsel, do you have any objections? 
+				(DC) No, your honor. Please proceed. 
+				(J) The court admits A as a witness. 
+	16. Procedure to examine a witness
+		(1) Witness's oath 
+				(J) You are going to be examined as a witness for this case. Before testifying, please take an oath that you will not lie. 
+				(J) Please read aloud this oath. 
+				(W) I swear, according to my conscience, that I will speak the truth, not to conceal anything and not to speak falsely. 
+				(W) Witness A. 
+				(J) As a witness, you are required to testify the truth as you have sworn.
+				(J) You are now under oath. You may be punished for perjury if you give any false testimony. 
+				(J) You are also advised of your right to refuse to answer questions on the grounds that it may incriminate you or your relatives. Please tell the court if this arises. 
+		(2) Objections and rulings 
+				(P) Objection! Defense Counsel is giving a leading question to the witness. 
+				(DC) Your honor, leading questions are permitted during cross-examination. I think the prosecutor's objection is groundless. 
+				(J) Objection overruled. 
+		(3) Conclusion of examination of witness 
+				(J) Examination of you as a witness is completed.
+				(J) Thank you very much. 
+	17. Other procedures 
+		(1) Rulings to consolidate oral proceedings 
+				(J) The court consolidates the charge against the defendant for robbery (XXXX (WA) No. ) with the present charge. 
+		(2) Alteration of the counts and applicable penal statutes
+				(P) The prosecution requests that the count in the charging sheet be altered to "the defendant....," and the name of the offense and the penal statutes applicable thereto be altered to "theft, Article 235 of the Penal Code," respectively. 
+				(DC) I have no objections, your honor. 
+				(J) These alterations are so allowed. 
+		(3) Where a ruling is made to keep secret the victim's identification information, and what to call the victim is decided 
+				(J) In the proceedings hereafter, the victim mentioned in Charged Fact I of the charging sheet, dated June 20, XXXX, shall be called Victim A, and the victim mentioned in the additional charging sheet, dated July 10, XXXX, shall be called Victim B, respectively. 
+		(4) Ruling to permit the victim's participation in criminal proceedings 
+				(P) Today, Victim A applied for participation in the proceedings.
+				(P) The prosecution considers his/her participation to be appropriate. 
+				(J) Defense Counsel, do you have any objections? 
+				(DC) No, your honor. Please proceed. 
+				(J) The court permits the applicant to participate in the proceedings of this case. 
+		(5) Statement by the victim and others of their sentiments and other opinions concerning the case 
+				【When the victim and others apply to make a statement】
+				(J) The court now allows the victim to state his/her sentiment and other opinions. 
+				(J) (To the victim) Please step forward to the box, and make your statement. 
+				(V) • I was beaten by the defendant and was hospitalized for as long as six months.
+				(V) During this period, I went through a hard time because I was unable to move around or go to work. 
+				(V) • I will never forgive the defendant. 
+		(6) Expedited trial procedure 
+			A. Guilty plea 
+				【After the reading of the charging sheet and the notice of the right to remain silent】
+				(J) Do you have anything to say in response to the facts just read by the prosecutor ? 
+				(D) The facts are true in their entirety. 
+				(J) Do you mean that you will accept conviction and punishment for the charged facts? 
+				(D) Yes.
+			B. Defense Counsel's opinion 
+				(J) What is your opinion, Defense Counsel ? 
+				(DC) I agree with the defendant. 
+			C. Ruling to hear the case through the expedited trial procedure 
+				(J) The prosecutor has petitioned that this case should be processed through the expedited trial procedure.
+				(J) As the defendant and his/her defense counsel have consented to this and the defendant has entered a guilty plea, the court decides to hear this case through the expedited trial procedure. 
+			D. Request for examination of evidence, etc. 
+				(J) Now, the court moves on to the examination of evidence.
+				(J) Prosecutor, please make a request for examination of evidence.
+				(P) To prove the facts charged in this case, I request the court to admit the evidence listed in the Evidence Card(s), A and B. 
+				(J) Defense counsel, do you have any objections? 
+				(DC) No, your honor, we consent to all of the evidence as admissible. 
+	18. Closing argument 
+				(J) Prosecutor, please make your closing argument.
+				(J) Defendant, please listen to the prosecutor's closing argument. 
+				(P) We would like to make the closing argument. 
+				(P) • To begin with, concerning the facts in this case, we are convinced that the facts constituting the crime charged in this case have been sufficiently proven by the evidence that has been examined in this court. 
+				(P) • Concerning the circumstances surrounding this case, the defendant entered Japan for the purpose of earning money, planned from the beginning to stay in this country beyond the period of time allowed under his/her status of residence, and stayed here unlawfully for more than two years. Considering the length of his/her unlawful stay, the defendant's criminal responsibility is heavy indeed. 
+				(P) • In light of the above circumstances, applying the relevant laws, we consider imposing a sentence of one year and six months imprisonment with work to be appropriate in this case. 
+	19. Statement of opinions by the victim who participates in the proceedings 
+				【Where the victim has filed an application and been given permission for participation in the proceedings】
+				(J) Please state your opinion. 
+				(VP) I state my opinion as a victim of this case. 
+				(VP) • The defendant abruptly picked a quarrel with me for no reason, and then attacked me all of a sudden.
+				(VP) • From his/her attack, I was seriously injured and forced to be hospitalized for as long as one month.
+				(VP) During this period, I went through a hard time because I was unable to move around. 
+				(VP) • The defendant even refused to apologize, arguing that there was also fault on my part, and he/she has not paid my hospital expenses, let alone any consolation money. 
+				(VP) • I can never forgive the defendant.
+				(VP) I want him/her to be punished by imprisonment with work for four years. 
+	20. Defense Counsel's closing argument 
+				(J) Defense Counsel, please make your closing argument. 
+				(DC) I would like to make the closing argument for the defendant.
+		(1) The example of a case of violation of the Immigration Control and Refugee Recognition Act (where the defendant admits his/ her guilt) 
+				(DC) • Since the defendant has honestly admitted before this court the facts constituting the crime charged in this case, I, as his/her defense counsel, have no particular points of rebuttal regarding the facts. 
+				(DC) • As the defendant has said before this trial court, he/she is in clear violation of the immigration law and now regrets his/her long unlawful stay in this country. The defendant has stated that once deported, he/she will never come back to Japan, and has promised that he/she will never again violate this law in Japan. 
+				(DC) • The defendant's purpose for his/her unlawful stay in Japan was to find employment. He/She had no other illegal purpose. 
+				(DC) • From the day of his/her arrival in Japan until his/her arrest, the defendant worked hard and violated no laws beside this case. He/she has no criminal record or arrest record. 
+				(DC) • In this case, the defendant has been subject to such severe proceedings as arrest, detention and prosecution. He/She has already been in custody for a fair amount of time, and thus he/she has been thoroughly sanctioned socially and economically. 
+				(DC) • In light of such circumstances, we sincerely ask the court to allow the defendant an opportunity to rehabilitate himself/herself within the community and start his/her life anew, by granting him/her suspension of execution of sentence. 
+		(2) The example of a case of theft (where the defendant denies his/her guilt) 
+				(DC) • The defendant intended to purchase the ring in question, had no intention of stealing it, and is therefore not guilty of theft.
+				(DC) This is clear according to the following facts supported by the evidence. 
+				(DC) • Given these facts, the defendant did not intend to commit theft and thus, he/she is not guilty. 
+	21. Defendant's final statement 
+				(J) The trial will soon end. Is there anything you wish to say about this case?
+				(D) • I am very sorry for what I have done. 
+				(D) • I did not intend to steal anything.
+				(D) Please let me return to my country soon. 
+	22. Notice of trial date 
+		(1) Notice of next trial date 
+				(J) The court assigns November 8, XXXX, 10: 30 a.m. as the next trial date. 
+		(2) Notice of date of rendition of judgment 
+				(J) Judgment will be rendered on December 6, XXXX at 1:00 p.m. in the present courtroom. 
+	23. Pronunciation of judgment 
+				(J) Now the judgment is going to be pronounced on the charge of the ______ Criminal Case against the defendant. 
+				(J) Reasons for judgment: The summary of the criminal facts, the facts constituting the crime found by this court on the basis of the evidence is as follows: 
+				(J) • Therefore, applying the relevant laws to what this court found, the judgment has been pronounced as stated in the main text. 
+				(J) • Factors taken into consideration in determining the type and extent of punishment to be meted are as follows.
+	24. Explaining of suspension of execution of sentence 
+		(1) Suspension of execution of sentence for a defendant under detention 
+				(J) In accordance with the criminal procedure, you will be released.
+				(J) You will not be imprisoned as long as you do not violate the laws in Japan for the coming ______ years.
+				(J) However, if you commit any crime and are sentenced for it during that period, the suspended execution of the sentence will be revoked.
+				(J) Then, you will be subject to imprisonment with work for ______ year(s) as ordered by this court.
+				(J) Of course, in that case, you will also serve the sentence rendered against you for the possible new crime. 
+				(J) Take due care not to realize such a situation. 
+		(2) Suspension of execution of sentence for a defendant who has already unlawfully stayed in Japan 
+				(J) Your legal period of stay has already expired. Soon after this judgment, you will most likely be subject to deportation procedures by the Immigration Bureau. 
+				(J) Therefore, you will not actually be imprisoned for the present crime as long as for years after deportation you do not commit any crime in Japan upon your return. 
+	25. Inclusion of the days spent in pre-sentencing detention into the term of sentence imposed 
+				(J) You have been detained for a fair amount of time. Of the number of days of pre-sentencing detention, ______ days are judged to be deemed as the period of execution of the imprisonment. 
+				(J) Therefore, the prison term of ______ year(s) ______ month(s) pronounced in sentencing will be reduced by ______ days.
+	26. Explaining of probation 
+				(J) Probation assists the offender in the rehabilitation process under the supervision of government probation officers assigned to the probation office. 
+				(J) An offender is usually required to report to a volunteer probation officer under the supervision of a government probation officer several times a month to be given instructions on his/her daily life. 
+				(J) As soon as this judgment becomes final and binding, report to the government probation office to receive the instructions that you are required to follow. 
+				(J) If you fail to follow the instructions, the suspension of execution of sentence is subject to revocation. 
+				(J) Moreover, you would be ineligible for a grant of suspension of execution of sentence if you commit another crime and are sentenced to imprisonment without work or sentenced to a more severe punishment. Therefore, I advise you to remain on good behavior. 
+	27. Notice of the right of appeal 
+				(J) If you are dissatisfied with this judgment, you have the right to file an appeal to the court of second instance (Koso appeal) <file a final appeal (Jokoku) appeal).
+				(J) If you choose to appeal, you are advised to write a petition for appeal <final appeal> addressed to the High Court <the Supreme Court) and submit it to this court within a period of 14 days beginning tomorrow. 
+III. Examples of the Main Text of Judgment in the Court of First Instance
+	1. Guilty judgment 
+		(1) Principal punishment 
+			A. Standard 
+				(J) • The defendant is hereby sentenced to one year imprisonment with work (or without work). 
+				(J) • The defendant is hereby sentenced to a fine of 200,000 yen. 
+				(J) • The defendant is hereby sentenced to 10 days. misdemeanor imprisonment without work. 
+			B. Indeterminate sentence for a juvenile defendant 
+				(J) • The defendant is hereby sentenced to imprisonment with work for not less than one year but not more than two years. 
+			C. Cumulative imposition of imprisonment and fine 
+				(J) The defendant is hereby sentenced to both one year imprisonment with work and a fine of 200,000 yen. 
+			D. Separate sentences 
+				(J) The defendant is hereby sentenced to one year imprisonment with work for the first offense and two years imprisonment with work for the second offense. 
+		(2) Inclusion of the days spent in pre-sentencing detention into the term of sentence imposed 
+			A. Standard 
+				(J) Of the total number of days spent in pre-sentencing detention, 30 days shall be deducted from the said. period of imprisonment. 
+			B. Separate sentences 
+				(J) Of the total number of days spent in pre-sentencing detention, 30 days shall be deducted from the period of imprisonment for the first offense. 
+			C. Case where the principal punishment is a fine or minor fine 
+				(J) Of the total number of days spent in pre-sentencing detention, an equivalent of 30 days, with each day converted into 5,000 yen, shall be deducted from the amount of the fine. 
+			D. Deduction of part of the number of days spent in pre-sentencing detention, so as to set off the whole period of imprisonment or the total amount of the fine. 
+				(J) • A part of the total number of the days spent in pre-sentencing detention shall be deducted from said period of imprisonment so as to set off the whole period of imprisonment. 
+				(J) • Of the total number of the days spent in pre-sentencing detention, an equivalent of the days, with each day converted into 5,000 yen, shall be deducted from the amount of the fine so as to set off the whole amount of the fine. 
+		(3) Detention in a workhouse in lieu of payment of fine 
+			A. Standard 
+				(J) If the defendant is unable to pay the full amount of said fine, he/she shall be detained in a workhouse for the equivalent number of days, as each unpaid 5,000 yen is converted into one day. 
+			B. Fractions 
+				(J) If the defendant is unable to pay the full amount of said fine, he/she shall be detained in a workhouse for the equivalent number of days, as each unpaid 6,000 yen is converted into one day, provided that every part or fraction of a day shall be equated to one whole day. 
+		(4) Suspension of execution of sentence 
+				(J) The execution of said sentence shall be suspended for three (3) years from the day on which this sentence becomes final and binding. 
+		(5) Probation 
+				(J) The defendant shall be placed under probation during said period of suspension of execution of the sentence. 
+		(6) Correctional guidance 
+				(J) The defendant is hereby sentenced to undergo correctional guidance. 
+		(7) Confiscation 
+			A. Standard 
+				(J) The short sword under seizure (Seized Article No. XX-1 of XXXX) shall be confiscated. 
+			B. Confiscation of forged or altered parts of documents 
+				(J) The forged part of the promissory note under seizure (Seized Article No. XX-1 of XXXX) shall be confiscated. 
+			C. Confiscation of an object not under court seizure 
+				(J) The promissory note in the custody of the District Public Prosecutors Office ( _______ District Public Prosecutors Office, Retained Article No. XX-1 of XXXX) shall be confiscated. 
+			D. Confiscation of the assets generated from crime 
+				(J) The cash amounting to eight million yen in the custody of the ______ District Public Prosecutors Office ( ______ District Public Prosecutors Office, Retained Article No. XX-1 of XXXX; regarded as assets generated from crime) shall be confiscated. 
+		(8) Collection of equivalent value 
+			A. Standard 
+				(J) In lieu of confiscation, the defendant shall pay 100,000 yen as an equivalent value of the article subject to confiscation. 
+			B. Collection of equivalent value of the assets generated from crime
+				(J) In lieu of confiscation, the defendant shall pay three million yen as an equivalent value of the assets generated from crime subject to confiscation. 
+		(9) Return of the seized article to the victim 
+			A. Standard 
+				(J) The book under seizure (Seized Article No. XX-1 of XXXX) shall be returned to Victim A. 
+			B. Victim unknown 
+				(J) The book under seizure (Seized Article No. XX-1 of XXXX) shall be returned to the victim, whose name is currently unknown. 
+			C. Deceased victim 
+				(J) The book under seizure (Seized Article No. XX-1 of XXXX) shall be returned to the heirs of Victim A. 
+		(10) Provisional payment 
+				(J) The defendant is hereby ordered to provisionally pay the amount equivalent to said fine. 
+		(11) Court costs 
+				(J) • Court costs shall be paid by the defendant. 
+				(J) • The defendants shall be jointly and severally liable for the court costs. 
+				(J) • The court costs shall be paid by the defendants in equal shares. 
+				(J) • The amount paid to Witness A as part of the total court costs shall be borne by the defendant. 
+				(J) • The defendant is ordered to pay all court costs, except the costs incurred by Interpreter A. 
+		(12) Mitigation or remission of execution of punishment 
+				(J) • The execution of said punishment is mitigated to one year imprisonment with work. 
+				(J) • The defendant is hereby sentenced to one year imprisonment with work and the execution of said. punishment shall be remitted. 
+		(13) Remission of punishment 
+				(J) The defendant is hereby granted remission of punishment. 
+	2. Judgment of not guilty or not guilty for part of the charges 
+		(1) Not guilty 
+				(J) The defendant is hereby pronounced not guilty. 
+		(2) Not guilty for part of the charges
+				(J) The defendant is hereby pronounced not guilty on the charge of fraud. 
+	3. Other judgments 
+		(1) Dismissal by reason of judicial bar 
+				(J) The defendant is hereby dismissed (for judicial bar). 
+		(2) Dismissal of prosecution 
+				(J) The prosecution is hereby dismissed. 
+		(3) Lack of jurisdiction 
+				(J) This case is not within the jurisdiction of this court. 
+IV. Examples of the Main Text of Judgment in the Court of Second Instance 
+	1. Dismissal of appeal to the court of second instance, reversal and remand 
+		(1) Dismissal of appeal to the court of second instance 
+				(J) • The appeal is dismissed. 
+				(J) • All appeals in this case are dismissed. 
+				(J) • The appeal on the charge against Defendant ______ is dismissed. 
+		(2) Reversal of the judgment in prior instance and rendering of own judgment by the court of second instance 
+				(J) • The judgment in prior instance is hereby reversed.
+				(J) The defendant is hereby sentenced to ______ year(s) and ______ month(s) of imprisonment with work. 
+				(J) • The guilty part in the judgment in prior instance is reversed. 
+				(J) The defendant is hereby pronounced not guilty. 
+				(J) • The judgment in prior instance made against each of the defendants is reversed.
+				(J) Defendant A is hereby sentenced to one year of imprisonment with work. Defendant B is hereby sentenced to six months of imprisonment with work. 
+				(J) • The judgment in prior instance against Defendant ______ is reversed.
+				(J) Defendant ______ is hereby sentenced to three years of imprisonment with work. 
+		(3) Reversal of the judgment in prior instance and remanding of the case back to the court of prior instance 
+				(J) The judgment in prior instance is reversed.
+				(J) The case is remanded to the ______ District Court. 
+		(4) Reversal of the judgment in prior instance and transfer of the case to another court 
+				(J) The judgment in prior instance is reversed.
+				(J) The case will be transferred to the District Court.
+	2. Inclusion of the days spent in pre-sentencing detention into the term of sentence imposed 
+				(J) • ______ days of the period that the defendant spent in pre-sentencing detention pending appellate trial shall be deducted from said period of imprisonment ordered by the judgment in prior instance. 
+				(J) • Of the total number of days spent in pre-sentencing detention pending trial in the court of prior instance, ______ days shall be deducted from said period of imprisonment. 
+	3. Payment of court costs 
+				(J) • Court costs at this court, except the costs incurred by Interpreter A, shall be paid by the defendant. 
+				(J) • The amount paid to Witness A as part of the total court costs at the court of prior instance shall be paid by the defendant. 
+V. Reasons for Judgment in the Court of First Instance 
+	1. Facts constituting the crime
+		(1) Example 1: Putting into use the unlawfully created electromagnetic record encoded in a payment card, and theft of money
+				(J) The defendant attempted to steal money using a card containing an unlawfully created electromagnetic record, which was made by creating without authorization an electromagnetic record that was supposed to be used for the administration of financial affairs by another person and encoded on the cash card issued under the name of A, but which appeared to belong to B. In such attempt, on June 12, XXXX, at approximately 11:30 a.m., at the Nishi-Ogikubo Branch of Bank C, located at 4-2-5 Nishi-Ogikubo, Suginami-ku, Tokyo, the defendant inserted said card twice into the card slot of the automated teller machine placed in that branch for the purpose of bringing about improper administration of financial affairs by another person, and made the machine function based on the electromagnetic record read from the card. The defendant thus put the electromagnetic record encoded on the card into use for the administration of financial affairs by another person, and withdrew from the machine 500,000 yen in cash that was under the control of the Nishi-Ogikubo Branch of Bank C and stole the money. 
+		(2) Example 2: Violation of the Stimulants Control Act 
+				(J) The defendant, in the absence of legal grounds for exceptional treatment, treatment, on April 5, April 5, XXXX, at approximately 6:30 p.m. at his/her residence at 3-6 Yamada-cho, Yamanaka City, injected 0.25 milliliter of water solution containing approximately 0.04 gram of phenyl-methyl-amino-propane, a Stimulant drug, into his/her left arm. The defendant thus used the stimulant drug. 
+		(3) Example 3: Violation of the Cannabis Control Act 
+				(J) The defendant, without due cause, intending to import cannabis, boarded XX Airlines flight number 017 at ______ International Airport, in Country A, on May 3, XXXX (local time), concealing 70.94 grams of cannabis leaves, including seeds, in the soles of the socks he/she was wearing. Upon arrival at Narita International Airport, located in Narita City, Chiba Prefecture, on May 4, XXXX, at about 12:30 p.m., the defendant imported cannabis into this country by landing in this country and deplaning while carrying the cannabis with him/her. 
+		(4) Example 4: Violation of the Narcotics and Psychotropics Control Act 
+				(J) The defendant, without due cause, possessed 10 grams of diacetylmorphine hydrochloride, which is categorized as narcotics, in a wardrobe closet in his/her residence at 3-1 Tanaka-cho, Chiyoda-ku, Tokyo, at about 6:00 p.m. on June 10, XXXX. 
+		(5) Example 5: Violation of the Anti-Prostitution Act 
+				(J) On October 8, XXXX, between the hours of 11: 20 p.m. and 11: 45 p.m., the defendant loitered or halted with the intention of prostitution on the sidewalk between the "Kaori" coffee house, located at 2-5-10 Shin-Yokohama, Kouhoku-ku, Yokohama City, Kanagawa Prefecture, and the Shin-Yokohama Branch of the Aoi Bank, located at 2-2-4 Shin-Yokohama, thus the defendant waited for customers in a conspicuous manner in the public. 
+		(6) Example 6: Robbery causing death 
+				(J) The defendant thought of beating someone up and robbing him/her of his/her money or property in order to obtain cash for amusement expenses as well as to vent his/her own aggression. In conspiracy one another, the defendant, A, and B, on December 3, XXXX, at approximately 3:10 a.m., on the street around 14-1 Takahana-cho, Omiya-ku, Saitama City, assaulted C (20 years old at the time of the crime), who happened to be passing by the place, by punching him/her with their fists and kicking him/her with all their might many times in the face, head and stomach and other parts of his/her body. A deprived C, who could no longer resist, of one (1) wallet in his/her possession containing about 32,000 yen in cash. The defendant, A, and B, as a result of the abovementioned assaults, inflicted upon C acute left subdural hematoma, brain contusion, and traumatic subarachnoid hematoma, and thus caused his/her death on December 13, XXXX, at approximately 4: 12 p.m. at Omiya Hospital, located at 2-3-2 Bonsai-cho, Omiya-ku, Saitama City. 
+		(7) Example 7: Negligent driving causing injury 
+				(J) On September 12, XXXX, at about 9:30 a.m., the defendant was driving an ordinary passenger car at a speed of approximately 50 kilometers per hour on the road curving to the left in the vicinity of 31 Kichijoji Higashi-cho, Musashino City, Tokyo, in the direction from Ogikubo to Mitaka.
+				(J) In this given situation, the defendant, as a driver, had the duty of careful driving, that is, to watch carefully ahead, operate rightly the steering wheel, and keep adequately on course.
+				(J) However, the defendant, violating the duty of care and being occupied in an attempt to pick up a street map which had fell on the floor, proceeded at 50 kilometers per hour, without carefully looking ahead, letting go of the steering wheel for an instant. 
+				(J) Due to such negligence on the part of the defendant, his/her car entered the opposite lane, collided with a large delivery truck coming from the opposite direction, driven by A, at its right side body, then proceeded further ahead from the shock of the collision and collided with another delivery truck driven by B (55 years old at the time), which was following A's truck, at the right part of the front body. 
+				(J) As a result, the defendant inflicted upon B an injury of dislocation and fracture of the right hip joint, requiring approximately 200 days of medical treatment. 
+		(8) Example 8: Injury 
+				(J) The defendant, on September 2, XXXX, at approximately 1:05 p.m., on the street around 3-6-17 Hino-Minami, Konan-ku, Yokohama City, unjustly accused A (62 years old at the time of the crime) who happened to be passing by the place, saying, "Watch where you're walking, buddy!," punched him/her two (2) times with his/her fist in the face, and knocked A to the ground. The defendant then sat astride A and punched him/her several more times in the face. 
+				(J) From the abovementioned assaults, the defendant caused C to suffer injuries of a contusion on his/her right elbow and face, which required five (5) days of medical treatment. 
+		(9) Example 9: Fraud 
+				(J) The defendant, after illegally obtaining a credit card issued under the name of A by Heiwa Card Inc., planned to defraud one of the credit card member stores of its goods by illegally using the credit card. The defendant, on April 5, XXXX, at approximately 11: 15 a.m., at the Ginza Store of Nakamura, Inc., on the first floor of the Nakamura Shopping Center, located around 3 Nakamura-cho, Chuo-ku, Tokyo, pretending that he/she was A who had the authority to use the card and would pay the charges through the card system despite the lack of such will or authority to pay, presented the card and made an offer to B, the store manager of the store, to purchase three (3) items including a suit. The defendant received the items (valued at about 73,700 yen in total), at said time and place, from B who erroneously believed that the defendant was A and would pay the charges through the card system. The defendant thus defrauded the store of its goods. 
+		(10) Example 10: Homicide (with a definite intent) 
+				(J) The defendant, who was employed by and lived with A (62 years old at the time) at A's residence, located at 5-2-4 Yamanaka-cho, Koto-ku, Tokyo, quarreled with A after being reproached by him/her for yelling at a passerby, became outraged and immediately decided to kill A. The defendant, at about 7:00 p.m. on March 8, XXXX, in the six-mat room of A's residence, took a knife with a 13-centimeter-long blade out of a closet and held it in his right hand, seized A by the shirt collar with his left hand and stabbed A in the left-upper chest with the knife. When A attempted to run for his life, the defendant chased and overtook him/her on the road in front of the residence, stabbed A again, this time in the left-upper back. As a result, A instantly died from excessive bleeding due to puncture wounds to the heart. The defendant thus killed A. 
+		(11) Example 11: Homicide (Dolus eventualis) 
+				(J) The defendant harbored resentment toward A (30 years old at the time), an employee of a bar named "Hayabusa," located at 2-8-9 Yamanaka, Chiyoda-ku, Tokyo, as the defendant was being looked down upon by A. When the defendant visited "Hayabusa" as a customer at about 1: 30 p.m. on August 7, XXXX, A refused to serve a bottle of beer that defendant ordered, said to him, "Go home for today," and later thrust a fish knife in front of him, saying, "Stab me if you can." The defendant, indignant at being ridiculed for his timidity and, under the influence of alcohol, knowing that his act was highly likely to cause A to die, dared to stab A in the right side of his stomach with the defendant's mountain climbing knife with a blade 10 centimeters long, thereby causing A to die from excessive bleeding due to puncture wounds of his right kidney at Tanaka Hospital, located at 5-8-8 Kitagawa, Chiyoda-ku, at about 2: 05 a.m., August 8, XXXX. The defendant thus killed A. 
+		(12) Example 12: Violation of the Act for Controlling the Possession of Firearms or Swords and Other Such Weapons (Firearms and Swords Control Act) 
+				(J) On June 7, XXXX, at approximately 7:00 p.m., the defendant, in the absence of legal grounds for exceptional treatment, possessed one revolver together with nineteen. live cartridges, ammunition suitable for said revolver, by way of keeping them in his/her own ordinary passenger car parked on the street in the vicinity of 1-2-3 Tanaka-cho, Yokohama City. 
+		(13) Example 13: Violation of the Immigration Control and Refugee Recognition Act 
+				(J) The defendant, who is a foreigner with a nationality of Country ______ , while carrying his/her passport issued by the Government of ______ , landed at Narita International Airport, located in Narita City, Chiba Prefecture, and entered Japan on March 10, XXXX. While he/she was allowed to stay in Japan until April 10, XXXX, he/she did not have the period extended or changed, nor depart Japan by that date. The defendant thus stayed at 2-149 Yamato-cho, Yamato City, Kanagawa Prefecture, until May 11, XXXX, and accordingly he/she unlawfully overstayed in Japan exceeding the period allowed. 
+		(14) Example 14: Theft (Shoplifting)
+				(J) The two defendants, after conspiring with each other, on March 4, XXXX, at approximately 12: 45 p.m., at the Ikebukuro store of Kitayama, Inc., located at 1-2 Kitayama-cho, Toshima-ku, Tokyo, stole a total of 84 items that were under the control of A, the manager of the store, (priced at 30,850 yen in total) including 38 mechanical pencils. 
+		(15) Example 15: Theft (Pickpocketing) 
+				(J) The two defendants, after conspiring with each other, on March 4, XXXX, at approximately 4:54 p.m., on the street around 1-2 Yamashita-cho, Taito-ku, Tokyo, stole property of A (30 years old at the time) who happened to be passing by the place, in the manner that the defendant X stole out of the shoulder bag hanging from A's right shoulder, one (1) wallet (valued at 10,000 yen), containing 43,759 yen in cash and six (6) items including a cash card, all owned by A. 
+		(16) Example 16: Inducement of theft 
+				(J) The defendant, on the road in front of A's residence, located at 3-6 Kitayama-cho, Chiyoda-ku, Tokyo, at about 2:00 p.m., March 4, XXXX, induced X to steal money and property from A's residence, by stating, "All the people in this house will be out tomorrow. The backdoor is always open. Go and steal some money or valuables." The defendant thus made X decide to steal, thereby actually having him/her steal one (1) wristwatch (valued at 200,000 yen) owned by A at A's residence at about 3:00 p.m. on March 5, XXXX. Thus, the defendant induced X to commit theft. 
+		(17) Example 17: Accessoryship for theft 
+				(J) When X stole one (1) wristwatch (worth 200,000 yen) from A's residence, located at 3-6 Kitayama-cho, Chiyoda-ku, Tokyo, at about 3:00 p.m., March 4, XXXX, the defendant kept watch for X on the road in front of A's residence, thereby assisting X in committing theft. 
+	2. List of Evidence 
+				(J) Regarding the first part of the facts 
+				(J) • Statement of the defendant at trial 
+				(J) • Written statement of the defendant dated February 15, XXXX, given before the public prosecutor 
+				(J) • Testimony of Witness A at trial 
+				(J) • Written statement of B given before the public prosecutor 
+				(J) • Written statement of C given before the judicial police officer (copy) 
+				(J) • Victim's report completed by D 
+				(J) • On-site inspection report completed by the judicial police officer 
+				(J) • Investigative report dated January 22, XXXX, completed by the judicial police constable 
+				(J) • Written expert opinion completed by Expert Witness E 
+				(J) • One plastic bag of a stimulant drug seized by this court (Seized Article No. XX-1 of XXXX) 
+				(J) • One handgun (Retained Article No. XX-1 of XXXX) kept in custody at the ______ District Prosecutors Office 
+				(J) • Statement of Codefendant Y at this court, made before separation of proceedings 
+				(J) • Recorded testimony of A in the 3rd trial record 
+				(J) • Recorded testimony of C in the examination before this court 
+				(J) • Recorded testimony of D in the examination before the authorized judge 
+				(J) • Record of inspection by this court 
+				(J) • Medical report completed by Physician F 
+	3. Previous criminal record which will raise the maximum prescribed penalty 
+				(J) According to the criminal record of the defendant prepared by the public prosecutor's assistant officer, the court finds that the defendant was sentenced by the Summary Court to eight months imprisonment with work for theft on March 26, XXXX, and completed the prison term on November 26, XXXX. 
+	4. Judgment which already became final and binding 
+				(J) According to the criminal record of the defendant prepared by the public prosecutor's assistant officer, the court finds that the defendant was sentenced by the ______ District Court to one year imprisonment with work for injury on March 10, XXXX, and the judgment became final and binding on March 25, XXXX.
+	5. Application of legal provisions 
+				(J) The act of the defendant that this court found comes under Article 199 of the Penal Code. After choosing imprisonment with work for a definite term among the types of punishments provided by the Article, the court sentenced the defendant to eight (8) years imprisonment with work within the period provided by said Article. Applying Article 21 of the Penal Code, 120 days of pre-sentencing detention shall be deducted from the term of said punishment. The seized kitchen knife (Seized Article No. XX-1 of XXXX), which the defendant used to commit the offense and belonged to no one other than the defendant, shall be confiscated under Article 19, paragraph (1), item 2 of the Penal Code and the main clause of paragraph (2) of the same Article. The defendant shall be exempt from payment of the court costs under the proviso clause of Article 181, paragraph (1) of the Code of Criminal Procedure. 
+	6. Reasons for sentencing 
+				【Examples: Violation of the Immigration Control and Refugee Recognition Act】
+				(J) • This is a case where the defendant, a national of Country Y, unlawfully overstayed in Japan beyond the period of permitted stay. 
+				(J) • In light of the circumstances including the fact that the period of illegal stay was as long as more than two years, the defendant's criminal responsibility is heavy. 
+				(J) • On the other hand, the defendant expressed regret concerning the commission of this crime, and promised that he/she will return to his/her home country, work hard and rehabilitate himself/herself. His/her fiancée/fiancé who lived together with him/her, has a will to lead a married life with the defendant in his/her home country and longs for a lenient punishment for him/her. These circumstances are favorable to the defendant. 
+				(J) • Taking into consideration all of these circumstances, the court determined the sentence as pronounced in the main text of judgment. 
+VI. Reasons for Judgment in the Court of Second Instance 
+	1. Introductory part 
+				(J) The point of the appeal is as stated in the Statement of Reasons for Appeal authored in the name of Defense Counsel A <submitted by Prosecutor B>. The arguments responding to the Statement of Reasons for Appeal are as stated in the Written Answer authored in the name of Prosecutor B <Defense Counsel A>. Therefore, the court cites these documents in describing the arguments. 
+				(J) Regarding the improper punishment <errors in fact finding / violation of procedural laws and regulations/ insufficient reasons> among the reasons for appeal as stated in the Statement of Reasons for Appeal 
+	2. Main body 
+		(1) Dismissal of appeal to the court of second instance 
+				(J) The essence of the Statement of Reasons for Appeal is as follows: The judgment in prior instance found the defendant guilty of the import of a stimulant drug. It found that he/she had the knowledge that the material imported in this case was a stimulant drug. However, since he/she did not have such knowledge, the judgment has an error in its fact finding which apparently affected the judgment. 
+				(J) However, from the pieces of evidence listed in the judgment in prior instance, this court finds that the defendant, as a mariner on the freighter __, had sailed between Country ______ and Japan some 20 times and that while receiving education as a mariner in the same country, he/she obtained knowledge about prohibition against smuggling of stimulant drugs and other knowledge of customs-related laws. Therefore, it is assumed that he/she knew what kind of substance a stimulant drug was. 
+				(J) Based on this assumption, the defendant's explanation that he/she did not know that the substance in question was a stimulant drug is not reliable at all in light of the following: First, at the time that the defendant was requested by A to carry the material in question, the directions given as to how to transport and deliver it had all the indications of secrecy. Second, the defendant found that the material in question was a white crystalline substance divided into five (5) vinyl bags. Third, the manner in which the material was carried into Japan is a typical undercover method common to transporting stimulant drugs and other drugs. Fourth, there are additional factors shown in the record such as attempts by the defendant to destroy the evidence before and after this case came to light and the statements given by the defendant to investigators. Therefore, it is appropriate to find that the defendant had knowledge at the time of the import in question that the substance in question was a stimulant drug. 
+				(J) Therefore, this court finds that it was proper that the judgment in prior instance found the facts as cited therein based on the pieces of evidence as listed therein, and that there is no error in fact finding. Thus, there is no ground for appeal. 
+		(2) Reversal of the judgment in prior instance and rendering of own judgment by the court of second instance 
+				(J) The argument presented in this appeal in brief claims that the sentence given by the court of prior instance, one year and six months imprisonment without work, is improper in its severity. 
+				(J) According to the record, the accident in this case was as follows: the defendant, while driving an automobile, hit, knocked down and caused the death of the victim who was riding a bicycle in a crosswalk, due to the defendant' s negligence in that he/she started his/her automobile and proceeded just following the start of the preceding vehicle, without confirming safety on the left. Reflecting upon the seriousness of both the negligence and the result of the accident, and even duly considering the circumstances that have been presented in favor of the defendant, sentencing of the judgment in prior instance as handed down at the time should be recognized as proper.
+				(J) However, according to the results of the examination of the facts by this court, the court finds that after the judgment in prior instance, a settlement was made between the victim's family and the side of the defendant and the insurance, etc. to pay a total of 20 million yen, and as the feelings of the victim's family concerning the accident were mitigated by the settlement, the victim's family hoped in writing that the court grant leniency. In recognition of these circumstances, the sentencing of the judgment in prior instance should be considered too severe, at the present time, on the point that the judgment in prior instance did not grant suspension of the execution of the sentence. It would be clearly unjust if this court did not order a reversal on that point. 
+	3. Application of legal provisions 
+		(1) Dismissal of appeal to the court of second instance 
+				(J) Accordingly, this appeal is dismissed based on Article 396 of the Code of Criminal Procedure. In accordance with Article 21 of the Penal Code, 50 days of the total number of days spent in pre-sentencing detention for trial in this instance shall be deducted from the period of imprisonment imposed by the judgment in prior instance. Applying the main clause of Article 181, paragraph (1) of the Code of Criminal Procedure, this court orders the defendant to bear the court costs in this instance. Thus, the court pronounces the judgment as stated in the main text. 
+		(2) Reversal of the judgment in prior instance and rendering of own judgment by the court of second instance 
+				(J) Therefore, the court reverses the judgment in prior instance based on Article 397, paragraph (2) of the Code of Criminal Procedure, and pronounces the judgment under the proviso clause of Article 400 of the Code as follows: 
+				(J) The court applies the same laws and regulations as in the judgment in prior instance to the same facts constituting the crime as in the judgment in prior instance (including the application of the rule of treating plural crimes as a single crime for sentencing purpose and the choice of the type of punishment), and the court, within the range of the period of imprisonment, sentences the defendant to two years and ten months of imprisonment with work. In accordance with Article 21 of the Penal Code, 50 days of the total number of days spent in pre-sentencing detention at the court in prior instance shall be deducted from the period of said imprisonment. Applying the proviso clause of Article 181, paragraph (1) of the Code of Criminal Procedure, the court does not order the defendant to bear the court costs of the court of prior instance and this court. Thus, the court pronounces the judgments as stated in the main text. 
+		(3) Reversal of the judgment in prior instance and remanding of the case back to the court of prior instance 
+				(J) Therefore, in accordance with Article 397, paragraph (1) and Article 377, item (iii) of the Code of Criminal Procedure, the judgment in prior instance is reversed and the case is remanded to the ______ Summary Court, the court in prior instance, in accordance with the main clause of Article 400 of the Code of Criminal Procedure. The judgment is given as stated in the main text. 

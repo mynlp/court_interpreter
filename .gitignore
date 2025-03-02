@@ -1,0 +1,24 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# venv
+.venv
+
+# PyCharm
+.idea
+
+# Experiment-related files
+ocr/
+pdfs/
+dataset_raw/
+sandbox/
+excel/
+sandbox/
+
+# type stub
+typings/
