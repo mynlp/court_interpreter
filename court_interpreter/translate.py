@@ -5,7 +5,6 @@ import argparse
 import csv
 import uuid
 from logging import Logger
-from pathlib import Path
 
 import requests
 from groq import Groq
@@ -27,7 +26,10 @@ system_prompt = (
 
 def translate_with_client(client, model: str, language: str, sentence: str) -> str:
     user_prompt = (
-        f"以下の日本語の文を{language_map[language]}に翻訳してください。回答は必ず一行になるようにして下さい。\n"
+        f"以下の日本語の文を{language_map[language]}に翻訳してください。"
+        f"意訳は避け、単語の省略や付加をしない逐語訳で訳すようにしてください。"
+        f"疑問文はニュアンスが変わらないように注意して訳してください。"
+        "回答は必ず一行になるようにして下さい。\n"
         f"{sentence}\n"
     )
     completion = client.chat.completions.create(
@@ -156,9 +158,7 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
                 "vietnamese": vi,
             }
         )
-    dataset_name = Path(args.dataset_path).stem
-    csv_path = f"../output/translation/{dataset_name}-{args.system}.tsv"
-    with open(csv_path, "w") as f:
+    with open(args.csv_path, "w") as f:
         f.write(
             f"id\tsource_japanese\t{args.system}_english\t{args.system}_chinese\t{args.system}_vietnamese\n"
         )
@@ -174,6 +174,9 @@ if __name__ == "__main__":
     parser.add_argument("--api_key")
     parser.add_argument("--dataset_path", default="../dataset/handbook_filtered.tsv")
     parser.add_argument("--system", default="gpt", choices=["gpt", "llama", "azure"])
+    parser.add_argument(
+        "--csv_path", default="../output/translation/handbook_filtered-gpt.tsv"
+    )
     args = parser.parse_args()
     logger = get_logger()
     main(args, logger)
