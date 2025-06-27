@@ -83,7 +83,7 @@ def translate_with_llama(
         )
         translated_dataset.append(
             translate_with_client(
-                client, "llama-3.1-70b-versatile", system_prompt, user_prompt_str
+                client, "llama-3.3-70b-versatile", system_prompt, user_prompt_str
             )
         )
     return translated_dataset
