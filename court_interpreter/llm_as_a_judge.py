@@ -133,7 +133,7 @@ def judge(
         for _ in range(5):  # 最大5回リトライ
             try:
                 completion = client.chat.completions.create(
-                    model="gpt-4o",
+                    model="gpt-4.1-mini",
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_prompt},
@@ -168,7 +168,7 @@ def write_scores(scores: list[str], evaluation_path: str, question: bool) -> Non
 
 
 def main(args: argparse.Namespace, logger: Logger) -> None:
-    evaluation_path = f"{args.output_dir}/{Path(args.evaluation_set_path).name}"
+    evaluation_path = f"{args.output_dir}/{Path(args.evaluation_set_path).name.replace('.tsv', '.csv')}"
     df = pd.read_csv(args.evaluation_set_path, sep="\t")
     # id  source  translation_A	translation_B	translation_C	translation_D	mapping
     if args.question:

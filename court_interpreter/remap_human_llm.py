@@ -1,5 +1,5 @@
 # Step 6: Remap the evaluation set from A,B,C,D to target, gpt, llama, azure
-# Running this script generates `../output/evaluation/llm/remapped_{evaluation_set}.tsv` and `../output/evaluation/human/remapped_{evaluation_set}.tsv`
+# Running this script generates `../output/evaluation/llm/remapped_{evaluation_set}.csv` and `../output/evaluation/human/remapped_{evaluation_set}.csv`
 
 import ast
 import csv
@@ -108,35 +108,39 @@ def remap_columns_question(
 
 
 for language in ["chinese", "english", "vietnamese"]:
+    ### handbook
     df = pd.read_csv(  # type: ignore
         f"../output/translation/handbook_evaluation_set_{language}.tsv", sep="\t"
     )
     mapping_list: list[str] = df["mapping"].to_list()
     mappings: list[dict[str, str]] = [ast.literal_eval(m) for m in mapping_list]
-
+    # llm
     remap_columns_handbook(
-        f"../output/evaluation/llm/handbook_evaluation_set_{language}.tsv",
-        f"../output/evaluation/llm/remapped_handbook_evaluation_set_{language}.tsv",
+        f"../output/evaluation/llm/handbook_evaluation_set_{language}.csv",
+        f"../output/evaluation/llm/remapped_handbook_evaluation_set_{language}.csv",
         mappings,
     )
+    # human
     remap_columns_handbook(
-        f"../output/evaluation/human/handbook_evaluation_set_{language}.tsv",
-        f"../output/evaluation/human/remapped_handbook_evaluation_set_{language}.tsv",
+        f"../output/evaluation/human/handbook_evaluation_set_{language}.csv",
+        f"../output/evaluation/human/remapped_handbook_evaluation_set_{language}.csv",
         mappings,
     )
-
-df = pd.read_csv(  # type: ignore
-    "../output/translation/question_evaluation_set.tsv", sep="\t"
-)
-mapping_list: list[str] = df["mapping"].to_list()
-mappings: list[dict[str, str]] = [ast.literal_eval(m) for m in mapping_list]
-remap_columns_question(
-    "../output/evaluation/llm/question_evaluation_set.tsv",
-    "../output/evaluation/llm/remapped_question_evaluation_set.tsv",
-    mappings,
-)
-remap_columns_question(
-    "../output/evaluation/human/question_evaluation_set.tsv",
-    "../output/evaluation/human/remapped_question_evaluation_set.tsv",
-    mappings,
-)
+    ### question
+    df = pd.read_csv(  # type: ignore
+        f"../output/translation/question_evaluation_set_{language}.tsv", sep="\t"
+    )
+    mapping_list: list[str] = df["mapping"].to_list()
+    mappings: list[dict[str, str]] = [ast.literal_eval(m) for m in mapping_list]
+    # llm
+    remap_columns_question(
+        f"../output/evaluation/llm/question_evaluation_set_{language}.csv",
+        f"../output/evaluation/llm/remapped_question_evaluation_set_{language}.csv",
+        mappings,
+    )
+    # human
+    remap_columns_question(
+        f"../output/evaluation/human/question_evaluation_set_{language}.csv",
+        f"../output/evaluation/human/remapped_question_evaluation_set_{language}.csv",
+        mappings,
+    )

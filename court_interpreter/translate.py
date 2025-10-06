@@ -94,7 +94,7 @@ def translate_with_azure(
     source_sentences: list[str],
     logger=None,
 ) -> tuple[list[str], list[str], list[str]]:
-    location = "japaneast"
+    location = "eastasia"
     url = "https://api.cognitive.microsofttranslator.com/translate"
     params = {"api-version": "3.0", "from": "ja", "to": ["zh-Hans", "en", "vi"]}
     headers = {
