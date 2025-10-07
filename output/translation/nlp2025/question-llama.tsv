@@ -1,0 +1,51 @@
+id	source_japanese	llama_english	llama_chinese	llama_vietnamese
+question-01	あなたがその場にいなかったのは事実ですよね？	Is it not a fact that you were not present at the scene?	您当时不在现场是事实，对吧？	An có mặt tại hiện trường không phải là sự thật đúng không?
+question-02	あなたの証言は矛盾していないのですか？	Doesn't your testimony contradict itself?	你的证词没有相互矛盾吗？	Bạn có chắc lời khai của bạn không mâu thuẫn không?
+question-03	この行動が事前に計画されたものではないですか？	Wasn't this action premeditated?	这不是预谋的行动吗？	この行動 có phải là đã được lập kế hoạch từ trước không?
+question-04	この裁判の手続きを知っていますよね？	Are you familiar with the procedures of this trial?	你应该了解这一审判的程序吧？	Bạn đã biết các thủ tục tố tụng của phiên tòa này chưa?
+question-05	この事件の重要性は理解されていますよね？	Is the significance of this case understood?	您是否了解本案的重要性？	Ông có nhận thức được tầm quan trọng của vụ án này không?
+question-06	この事実は重要であるということに異論はないですよね？	"There can't be any dispute that this is an important fact, can there?"	这个事实很重要，这一点大家应该都有共识吧？	Không có gì tranh cãi về tầm quan trọng của sự thật này đúng không?
+question-07	この事実を無視することはできませんよね？	We can't just ignore this fact, can we?	这个事实是不能被忽略的吧？	 sự thật này không thể bỏ qua được phải không?
+question-08	この書類には無効な部分が含まれていないのでしょうか？	Does this document contain any invalid or void provisions?	这个文件中是不是没有无效的部分？	Tài liệu này có chứa phần không hợp lệ nào không?
+question-09	この証拠は確実ではないんですよね？	Isn't this evidence unreliable?	这份证据不够确凿，对吧？	證拠 này không chắc chắn, đúng không?
+question-10	この証拠は本件と関係がないのではないですか？	Isn't this evidence irrelevant to the case at hand?	这一证据与本案无关，不是吗？	この chứng cứ này không liên quan đến vụ việc này là gì vậy?
+question-11	この調査は十分に行われていなかったのではありませんか？	Was this investigation not thoroughly conducted?	調查是否充分进行了没有？	Cuộc điều tra này đã được thực hiện đầy đủ chưa nhỉ?
+question-12	これだけの証拠がありながら、合理的な疑いが残ると言えるでしょうか？	With this much evidence, can you say there is still reasonable doubt?	这许多证据的情况下，还能说有合理的疑虑吗？	Với những bằng chứng như vậy, liệu có thể nói rằng vẫn còn nghi ngờ hợp lý không?
+question-13	その点については異論の余地がないですよね？	No reasonable person could disagree with that, could they?	这一点上恐怕没有异议吧？	Ông không có ý kiến gì khác về điểm này đúng không?
+question-14	その日に誰も彼を見かけなかったのではありませんか？	Didn't anyone see him on that day?	那天没有人看到他吗？	Có phải vào ngày hôm đó không ai thấy他 không?
+question-15	その日の出来事についての詳細はあまりにも不明確ではないですか？	Isn't the detail of that day's events rather unclear?	當天的事情的詳情不是過於模糊不清了嗎？	Chi tiết về sự việc hôm đó không rõ ràng quá chứ?
+question-16	なぜ十分な調査が行われなかったのか、それが合理的に説明できるのでしょうか？	Was the failure to investigate thoroughly accountable and is there a reasonable explanation for it?	难道沒有進行過充分的調查嗎？難道對於沒有進行調查的原因不能做出合理的解釋嗎？	Tại sao không có cuộc điều tra đầy đủ, và điều đó có thể giải thích một cách hợp lý không?
+question-17	もし被告人が本当に有罪なら、なぜこれほど多くの疑問点が残るのでしょうか？	If the defendant is truly guilty, then why are there still so many doubts remaining?	倘若被告人确实有罪，为什么会有这么多疑点残留？	Nếu bị cáo thật sự có tội thì tại sao lại còn nhiều điểm nghi vấn đến vậy?
+question-18	もし無実であるならば、なぜここまで証拠を隠そうとするのでしょう？	If you are innocent, then why do you try so hard to conceal evidence?	如果是无罪的，又为何要如此隐瞒证据呢？	Nếu không phạm tội thì tại sao lại muốn che giấu bằng chứng đến vậy?
+question-19	共犯者の存在を否定する根拠が他にあるでしょうか？	Is there any other basis for denying the existence of the accomplice?	否定共犯者存在的其他根据又是什么呢？	Liệu còn có bằng chứng nào khác để bác bỏ sự tồn tại của đồng phạm không?
+question-20	証拠が正当に収集されたことを確認していますか？	Have you ensured that the evidence was gathered lawfully?	你確認證據的取得過程是否正當嗎？	Tôi có chắc chắn rằng chứng cứ đã được thu thập hợp pháp không?
+question-21	証拠を見れば、明らかに一致しますよね？	If we look at the evidence, it obviously matches, doesn't it?	如果你查看证据，是不是清楚地看出是一致的？	Nếu xem xét các bằng chứng thì rõ ràng chúng trùng khớp phải không?
+question-22	証拠資料は全て揃っているのですよね？	Is it the case that all the evidentiary materials have been gathered?	你确定所有证据资料都已经准备好了吧？	Tất cả tài liệu bằng chứng đều đã sẵn sàng rồi đúng không?
+question-23	証拠品があなたのものであると確認したのではないですか？	Didn't you confirm that the evidence belongs to you?	证实过您确实确认过证物是您的东西吗？	Bạn đã xác nhận đó là vật chứng thuộc về bạn chứ ư?
+question-24	証人の供述には矛盾がありますよね？	Isn't there a contradiction in the witness's testimony?	证人的证词中存在着矛盾对吧？	Chứng nhân đã khai có mâu thuẫn đúng không?
+question-25	証人は以前にも同様の証言をしましたよね？	Isn't it true that you've made similar statements before?	证人以前也作过类似的证词，对吧？	Chứng nhân đã từng khai báo tương tự như vậy trước đây đúng không?
+question-26	証人は当日の出来事を全て覚えているのですね？	The witness remembers all events of that day, is that correct?	您还记得当天发生的所有事情吗？	Chứng nhân có nhớ tất cả sự việc diễn ra vào ngày hôm đó không?
+question-27	真実を隠す理由が他にあるわけではないですよね？	There's no other reason to conceal the truth, is there?	你不是还有其他隐瞒真相的理由吧？	Bạn không có lý do nào khác để giấu sự thật đúng không?
+question-28	真実を知っているのに、どうしてそれを隠すのでしょう？	Why did you choose to conceal the truth when you knew it?	你明明知道真相，还为什么要隐瞒呢？	Cô ấy biết sự thật nhưng tại sao lại che giấu?
+question-29	誠実な人が、これほど多くの矛盾した証言をするでしょうか？	Would a honest person give as much inconsistent testimony as this?	会有一个正直的人会提供这么多相互矛盾的证词吗？	Người trung thực có phải lúc nào cũng đưa ra những lời khai mâu thuẫn đến mức như vậy hay không?
+question-30	他にも疑問を持つべき点があるのではないですか？	Isn't there another point that should raise some doubt?	难道您不认为还应该考虑其他疑点吗？	Tuy nhiên còn có điểm nào đáng ngờ nữa không?
+question-31	誰が見ても不自然な流れですよね？	That's an unnatural sequence of events, don't you think?	这是任何人看都觉得不自然的发展吧！	Ai cũng có thể thấy được sự không tự nhiên ở đây đúng không?
+question-32	誰しも誤解や誤認をすることがありますよね？	Anyone can make mistakes or misidentifications, can't they?	是的，任何人都会产生误解或误认。	Mọi người đều có thể bị hiểu lầm hoặc nhận dạng sai đấy nhỉ?
+question-33	適正な手続きを踏まなければならないのは当然ですよね？	It is only natural that proper procedure be followed, isn't it?	当然，必须遵守合适的程序。	Tất nhiên phải tuân theo trình tự thủ tục đúng đắn đúng không?
+question-34	犯行現場にいたことを否定するには、これ以上の証拠が本当に必要でしょうか？	Is there really a need for any more evidence to dispute their presence at the scene of the crime?	您认为，为了证明自己当时并不在犯罪现场，真的需要更多证据吗？	行 vi phạm tội xảy ra anh nhận khăng khăng từ chối nhưng liệu có thật sự cần thêm bằng chứng để chứng minh điều đó?
+question-35	被害者と被告人が口論していた事実は否定できないのではないですか？	Isn't it true that you cannot deny the fact the victim and the defendant were arguing?	難道不能否定受害人和被告人曾经发生过口角的事实吗？	被害者 và bị cáo đã cãi nhau, sự thực này không thể phủ nhận được đúng không?
+question-36	被告人がその場にいなかったという主張は、これほどの証拠を前にして信じられるでしょうか？	Can the defendant's claim of being absent from the scene be believed in the face of such overwhelming evidence?	在如此证据面前，被告人称自己当时不在场的说辞，还是值得相信的吗？	Lời biện hộ rằng bị cáo vắng mặt ở hiện trường có đáng tin cậy khi đứng trước những bằng chứng này hay không?
+question-37	被告人が現場にいたことは間違いないのですか？	Was the defendant definitely at the scene?	被告人當時確定在現場嗎？	被告 có mặt tại hiện trường hay không, có chắc chắn không?
+question-38	被告人が犯行現場にいたことを証明する証拠があるのではないですか？	Isn't there any evidence that proves the defendant was at the scene of the crime?	被告人有没有证据证明其存在犯罪现场？	Còn chứng cứ nào chứng minh bị cáo có mặt tại hiện trường tội phạm không?
+question-39	被告人のアリバイが成立しないということは明らかではないですか？	Isn't it obvious that the defendant's alibi doesn't hold up?	显然，被告人的不在场证明是站不住脚的，不是吗？	Đối phương bị tố không có ái giải thì rõ ràng là không hợp lý được ngỗ nào phải không?
+question-40	被告人の証言は信じがたいですよね？	Isn't the defendant's testimony somewhat unbelievable?	证人站不是你说几句假话就能糊弄过去的。	Tôi không chắc chắn lời khai của bị cáo có đáng tin cậy hay không.
+question-41	被告人の人権は、この場でどうして尊重されないのでしょうか？	Why isn't the defendant's human rights being respected in this court?	被告的权利为何在这场庭审中得不到尊重？	Tòa án không tôn trọng nhân quyền của bị cáo như thế nào trong phiên xét xử này?
+question-42	被告人の陳述は一貫していますよね？	The defendant's statement has been consistent, hasn't it?	被告人的陈述是不是一直很一致啊？	Tuyên bố của bị cáo có nhất quán không?
+question-43	被告人はその現場にいなかったのではありませんか？	Wasn't the defendant not present at the scene?	被告人是否没有在事发现场？	Bị cáo có chắc là không có mặt tại hiện trường không?
+question-44	被告人はその時刻に現場付近にいたと認めたのではないですか？	Didn't you admit to being near the scene at that time?	被告人难道不是承认了自己当时就在案发现场附近吗？	被告 đã thừa nhận mình có mặt gần hiện trường vào thời điểm đó chứ?
+question-45	被告人にはアリバイがないのですか？	Does the defendant have an alibi?	原告没有不在场证明吗？	Bị cáo có chứng minh không có ở hiện trường lúc đó không?
+question-46	被告人はその日、午後8時には家に帰ったと述べているのですね？	Isn't it true that the defendant claims to have returned home by 8 o'clock that evening?	被告当天晚上8点以前已经回到家中了，对吗？	Bị cáo đã nói rằng anh ta đã trở về nhà vào lúc 8 giờ chiều đúng không?
+question-47	弁護士が提出した資料は全て確認済みではないですか？	Have you reviewed all the documents submitted by the defense attorney?	辩护律师提交的资料你们不是都已经核实过了吗？	Luật sư đã nộp tất cả tài liệu đã được kiểm tra chưa?
+question-48	法廷での宣誓を理解していますね？	Do you understand the oath you have just taken in this court?	你了解法庭上的宣誓的含义吗？	Thưa quý vị đã hiểu lời tuyên thệ trong phiên tòa chưa?
+question-49	目撃者の記憶が曖昧であることを、誰が否定できるのでしょうか？	Who can deny that a witness's memory is vague?	目撃者記忆模糊，谁又能否认？	Có ai có thể phủ nhận là kỷ niệm của nhân chứng không rõ ràng?
+question-50	目撃者の証言が矛盾しているとは思いませんか？	Don't you think the witness's testimony is contradictory?	目击者们的证词不会相互矛盾吗？	Chứng nhân này có lời khai mâu thuẫn không?
