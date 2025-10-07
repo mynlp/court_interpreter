@@ -51,7 +51,7 @@ def remap_columns_handbook(
                 "word_meaning_azure",
                 "fluency_azure",
             ],
-            delimiter="\t",
+            delimiter=",",
         )
         writer.writeheader()
         writer.writerows(remapped_rows)
