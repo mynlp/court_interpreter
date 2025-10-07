@@ -31,7 +31,7 @@ def generate_data_for_comet_reference_free(
     return [{"src": src, "mt": trans} for (src, trans) in zip(srcs, transs)]
 
 
-def calcurate_bleu(
+def calculate_bleu(
     language: str,
     output_path: str,
     ids: list[str],
@@ -354,15 +354,19 @@ def main(args: argparse.Namespace) -> None:
             translation_A, translation_B, translation_C, translation_D, mappings
         )
         if args.bleu:
+            logger.info("Calculating BLEU...")
             output_path = f"{args.output_dir}/bleu/{filename}"
-            calcurate_bleu(args.language, output_path, ids, transs)
+            calculate_bleu(args.language, output_path, ids, transs)
         if args.bertscore:
+            logger.info("Calculating BERTScore...")
             output_path = f"{args.output_dir}/bertscore/{filename}"
             calculate_bertscore(args.language, output_path, ids, transs)
         if args.comet:
+            logger.info("Calculating COMET...")
             output_path = f"{args.output_dir}/comet/{filename}"
             calculate_comet(output_path, ids, srcs, transs)
         if args.comet_ref_free:
+            logger.info("Calculating COMET (reference-free)...")
             output_path = f"{args.output_dir}/comet_ref_free/{filename}"
             calculate_comet_ref_free(output_path, ids, srcs, transs)
 
