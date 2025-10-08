@@ -101,7 +101,7 @@ def remap_columns_question(
                 "question_azure",
                 "fluency_azure",
             ],
-            delimiter="\t",
+            delimiter=",",
         )
         writer.writeheader()
         writer.writerows(remapped_rows)
@@ -122,8 +122,8 @@ for language in ["chinese", "english", "vietnamese"]:
     )
     # human
     remap_columns_handbook(
-        f"../output/evaluation/human/handbook_evaluation_set_{language}.csv",
-        f"../output/evaluation/human/remapped_handbook_evaluation_set_{language}.csv",
+        f"../output/evaluation/human/expert/handbook_evaluation_set_{language}.csv",
+        f"../output/evaluation/human/expert/remapped_handbook_evaluation_set_{language}.csv",
         mappings,
     )
     ### question
@@ -140,7 +140,7 @@ for language in ["chinese", "english", "vietnamese"]:
     )
     # human
     remap_columns_question(
-        f"../output/evaluation/human/question_evaluation_set_{language}.csv",
-        f"../output/evaluation/human/remapped_question_evaluation_set_{language}.csv",
+        f"../output/evaluation/human/expert/question_evaluation_set_{language}.csv",
+        f"../output/evaluation/human/expert/remapped_question_evaluation_set_{language}.csv",
         mappings,
     )
