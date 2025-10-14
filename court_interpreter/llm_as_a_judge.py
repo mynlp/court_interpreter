@@ -38,11 +38,17 @@ def create_system_prompt(
         note = "但し、原文（日本語）で主語が省略されている場合に翻訳文で主語が追加されている部分については付加とみなしません。（日本語では主語が省略されやすいため）\n"
     else:
         note = ""
+    if question:
+        sentences = "3つの翻訳文A,B,Cを与えるので"
+        metrics_num = "五つ"
+    else:
+        sentences = "4つの翻訳文A,B,C,Dを与えるので"
+        metrics_num = "四つ"
     return (
         "あなたは法廷通訳を行う通訳士です。\n"
-        f"{source_language}の文と、それを{translation_language}に翻訳した4つの文章A,B,C,Dを与えるので、"
+        f"{source_language}の文と、それを{translation_language}に翻訳した{sentences}、"
         "それぞれの翻訳性能を評価してください。\n"
-        "評価は以下の四つの基準に従って行ってください。\n"
+        f"評価は以下の{metrics_num}の基準に従って行ってください。\n"
         "1. 省略 (Omission)\n"
         "翻訳された文中において、原文にある情報が欠落しているかどうかを評価します。"
         "単語レベルで訳の省略があるか否かについて評価を行って下さい。\n"
