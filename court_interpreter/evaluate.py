@@ -43,7 +43,7 @@ def calculate_bleu(
         bleu = BLEU(effective_order=True)
     os.makedirs(Path(output_path).parent, exist_ok=True)
     with open(output_path, mode="w") as f:
-        f.write("ID\tgpt\tllama\tazure\tsys_len\tref_len\n")
+        f.write("ID\tgpt\tllama\tazure\ttarget_len\tgpt_len\tllama_len\tazure_len\n")
         for id_s, gpt_s, llama_s, azure_s, target_s in zip(
             ids, transs["gpt"], transs["llama"], transs["azure"], transs["target"]
         ):
@@ -51,13 +51,13 @@ def calculate_bleu(
             llama_bleu = bleu.sentence_score(llama_s, [target_s])
             azure_bleu = bleu.sentence_score(azure_s, [target_s])
             f.write(
-                f"{id_s.zfill(3)}\t{round(gpt_bleu.score, 2)}\t{round(llama_bleu.score, 2)}\t{round(azure_bleu.score, 2)}\t{gpt_bleu.sys_len}\t{gpt_bleu.ref_len}\n"
+                f"{id_s.zfill(3)}\t{round(gpt_bleu.score, 2)}\t{round(llama_bleu.score, 2)}\t{round(azure_bleu.score, 2)}\t{gpt_bleu.ref_len}\t{gpt_bleu.sys_len}\t{llama_bleu.sys_len}\t{azure_bleu.sys_len}\n"
             )
         gpt_corpus = bleu.corpus_score(transs["gpt"], [transs["target"]])
         llama_corpus = bleu.corpus_score(transs["llama"], [transs["target"]])
         azure_corpus = bleu.corpus_score(transs["azure"], [transs["target"]])
         f.write(
-            f"ALL\t{round(gpt_corpus.score, 2)}\t{round(llama_corpus.score, 2)}\t{round(azure_corpus.score, 2)}\t{gpt_corpus.sys_len}\t{gpt_corpus.ref_len}"
+            f"ALL\t{round(gpt_corpus.score, 2)}\t{round(llama_corpus.score, 2)}\t{round(azure_corpus.score, 2)}\t{gpt_corpus.ref_len}\t{gpt_corpus.sys_len}\t{llama_corpus.sys_len}\t{azure_corpus.sys_len}\n"
         )
 
 
