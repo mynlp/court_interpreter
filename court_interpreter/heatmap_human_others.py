@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+from scipy import stats
 
 # 区間の境界値（bins）とラベル（labels）
 bins = [
@@ -54,6 +55,9 @@ labels = [
 ]
 
 df_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
+stats_dict = defaultdict(
+    lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
+)
 
 dataset = "handbook"
 for language in ["english", "chinese", "vietnamese"]:
@@ -124,9 +128,17 @@ for language in ["english", "chinese", "vietnamese"]:
             ("comet", comet_results),
             ("comet_ref_free", comet_ref_free_results),
         ]:
+            # 連続値をそのまま使って相関係数を計算
+            stats_dict[eval][metrics][dataset][language]["spearman"] = stats.spearmanr(
+                human_results, results
+            )
+            stats_dict[eval][metrics][dataset][language]["kendall"] = stats.kendalltau(
+                human_results, results
+            )
+            # 連続値を区間に分けてクロス集計表を作成
             results_mapped = pd.cut(results, bins=bins, labels=labels).astype(str)
             crosstab = pd.crosstab(list(human_results), results_mapped)
-            # 補完したいcol_0の値を作成
+            # 0-1.0まで0.05刻みの列を補完
             new_columns = np.arange(0, 1.00, 0.05).round(2).astype(str).tolist()
             # 新しい列でDataFrameを再作成
             new_df = pd.DataFrame(index=crosstab.index, columns=new_columns)
@@ -165,9 +177,17 @@ for language in ["english", "chinese", "vietnamese"]:
         for eval, results in [
             ("comet_ref_free", comet_ref_free_results),
         ]:
+            # 連続値をそのまま使って相関係数を計算
+            stats_dict[eval][metrics][dataset][language]["spearman"] = stats.spearmanr(
+                human_results, results
+            )
+            stats_dict[eval][metrics][dataset][language]["kendall"] = stats.kendalltau(
+                human_results, results
+            )
+            # 連続値を区間に分けてクロス集計表を作成
             results_mapped = pd.cut(results, bins=bins, labels=labels).astype(str)
             crosstab = pd.crosstab(list(human_results), results_mapped)
-            # 補完したいcol_0の値を作成
+            # 0-1.0まで0.05刻みの列を補完
             new_columns = np.arange(0, 1.00, 0.05).round(2).astype(str).tolist()
             # 新しい列でDataFrameを再作成
             new_df = pd.DataFrame(index=crosstab.index, columns=new_columns)
@@ -237,3 +257,18 @@ for eval, other_info in df_dict.items():
                 plt.yticks(rotation=0)
         figure.tight_layout(h_pad=3.0)
         figure.savefig(f"../output/analysis/heatmap_human_{eval}/heatmap_{metrics}.pdf")
+
+for eval, other_info in stats_dict.items():
+    with open(f"../output/analysis/heatmap_human_{eval}/statistics.csv", mode="w") as f:
+        f.write(
+            "metrics,dataset,language,spearman,spearman_pval,kendall,kendall_pval\n"
+        )
+        for metrics, dataset_dict in other_info.items():
+            for dataset, language_dict in dataset_dict.items():
+                for language, value_dict in language_dict.items():
+                    f.write(f"{metrics},{dataset},{language},")
+                    stat_lines = ""
+                    for stat_name, value in value_dict.items():
+                        stat_lines += f"{value[0]:.4f},{value[1]:.4f},"
+                    # remove last comma and add newline
+                    f.write(f"{stat_lines[:-1]}\n")
