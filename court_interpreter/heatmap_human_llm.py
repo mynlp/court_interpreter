@@ -2,11 +2,34 @@ from collections import defaultdict
 
 import japanize_matplotlib  # noqa: F401
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import seaborn as sns
+from scipy import stats
+from semopy import polycorr
 from sklearn.metrics import confusion_matrix
 
+
+# クラメールの連関係数を求める関数
+def cramers_v(x, y):
+    # 分割表を作成
+    cont_table = pd.crosstab(x, y)
+    # カイ二乗を求める
+    chi2, pval = stats.chi2_contingency(cont_table, correction=False)[:2]
+
+    min_d = min(cont_table.shape) - 1
+    if min_d == 0:
+        return np.nan, np.nan
+    n = len(x)
+
+    # クラメールの連関係数
+    v = np.sqrt(chi2 / (min_d * n))
+
+    return (v, pval)
+
+
 df_dict = defaultdict(lambda: defaultdict(dict))
+stats_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
 for dataset in ["handbook", "question"]:
     for language in ["vietnamese", "chinese", "english"]:
@@ -17,12 +40,10 @@ for dataset in ["handbook", "question"]:
             f"../output/evaluation/llm/remapped_{dataset}_evaluation_set_{language}.csv"
         )
         llm_df = llm_df[llm_df["id"].isin(human_df["id"])]
-        human_df = human_df.astype(str)
-        llm_df = llm_df.astype(str)
-        for metrics in ["omission", "addition", "word_meaning", "fluency"]:
-            if dataset == "handbook":
-                for metrics in ["omission", "addition", "word_meaning", "fluency"]:
-                    human_results = pd.concat(
+        if dataset == "handbook":
+            for metrics in ["omission", "addition", "word_meaning", "fluency"]:
+                human_results = np.array(
+                    pd.concat(
                         [
                             human_df[f"{metrics}_target"],
                             human_df[f"{metrics}_gpt"],
@@ -30,7 +51,9 @@ for dataset in ["handbook", "question"]:
                             human_df[f"{metrics}_azure"],
                         ]
                     )
-                    llm_results = pd.concat(
+                ).astype(float)
+                llm_results = np.array(
+                    pd.concat(
                         [
                             llm_df[f"{metrics}_target"],
                             llm_df[f"{metrics}_gpt"],
@@ -38,32 +61,78 @@ for dataset in ["handbook", "question"]:
                             llm_df[f"{metrics}_azure"],
                         ]
                     )
-                    conf_mat = confusion_matrix(human_results, llm_results)
-                    df_dict[metrics][dataset][language] = conf_mat
-            else:
-                for metrics in [
-                    "omission",
-                    "addition",
-                    "word_meaning",
-                    "question",
-                    "fluency",
-                ]:
-                    human_results = pd.concat(
+                ).astype(float)
+                if metrics in ["word_meaning", "fluency"]:
+                    human_results = human_results * 4
+                    llm_results = llm_results * 4
+                df_dict[metrics][dataset][language] = confusion_matrix(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["pearson"] = stats.pearsonr(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["spearman"] = stats.spearmanr(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["kendall"] = stats.kendalltau(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["cramers"] = cramers_v(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["polycorr"] = (
+                    polycorr.polychoric_corr(human_results, llm_results)
+                )
+        else:
+            for metrics in [
+                "omission",
+                "addition",
+                "word_meaning",
+                "question",
+                "fluency",
+            ]:
+                human_results = np.array(
+                    pd.concat(
                         [
                             human_df[f"{metrics}_gpt"],
                             human_df[f"{metrics}_llama"],
                             human_df[f"{metrics}_azure"],
                         ]
                     )
-                    llm_results = pd.concat(
+                ).astype(float)
+                llm_results = np.array(
+                    pd.concat(
                         [
                             llm_df[f"{metrics}_gpt"],
                             llm_df[f"{metrics}_llama"],
                             llm_df[f"{metrics}_azure"],
                         ]
                     )
-                    conf_mat = confusion_matrix(human_results, llm_results)
-                    df_dict[metrics][dataset][language] = conf_mat
+                ).astype(float)
+                if metrics in ["word_meaning", "fluency"]:
+                    human_results = human_results * 4
+                    llm_results = llm_results * 4
+                elif metrics in ["question"]:
+                    human_results = human_results * 2
+                    llm_results = llm_results * 2
+                df_dict[metrics][dataset][language] = confusion_matrix(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["pearson"] = stats.pearsonr(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["spearman"] = stats.spearmanr(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["kendall"] = stats.kendalltau(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["cramers"] = cramers_v(
+                    human_results, llm_results
+                )
+                stats_dict[metrics][dataset][language]["polycorr"] = (
+                    polycorr.polychoric_corr(human_results, llm_results)
+                )
 
 # 図を5枚作る
 # Figure 1. 省略 (2x3)
@@ -110,3 +179,17 @@ for metrics, dataset_dict in df_dict.items():
             plt.yticks(rotation=0)
     figure.tight_layout(h_pad=3.0)
     figure.savefig(f"../output/analysis/heatmap_human_llm/heatmap_{metrics}.pdf")
+
+with open("../output/analysis/heatmap_human_llm/statistics.csv", mode="w") as f:
+    f.write(
+        "metrics,dataset,language,pearson,pearson_pval,spearman,spearman_pval,kendall,kendall_pval,cramers,cramers_pval,polycorr\n"
+    )
+    for metrics, dataset_dict in stats_dict.items():
+        for dataset, language_dict in dataset_dict.items():
+            for language, value_dict in language_dict.items():
+                f.write(f"{metrics},{dataset},{language},")
+                for stat_name, value in value_dict.items():
+                    if stat_name == "polycorr":
+                        f.write(f"{value:.4f}\n")
+                    else:
+                        f.write(f"{value[0]:.4f},{value[1]:.4f},")
