@@ -25,6 +25,7 @@ def cramers_v(x, y):
     # クラメールの連関係数
     v = np.sqrt(chi2 / (min_d * n))
 
+    # p値はカイ二乗検定のp値を返す
     return (v, pval)
 
 
