@@ -8,15 +8,15 @@ import pandas as pd
 
 
 def remap_columns_handbook(
-    input_csv: str, output_csv: str, mappings: list[dict[str, str]]
+    input_csv: str, output_csv: str, mappings: dict[str, dict[str, str]]
 ):
     with open(input_csv, mode="r", encoding="utf-8") as infile:
         reader = csv.DictReader(infile)
         rows = list(reader)
     remapped_rows: list[dict[str, str]] = []
-    for row, mapping in zip(rows, mappings):
+    for row in rows:
         new_dict = {"id": row["id"]}
-        for X, name in mapping.items():  # A, translation_gpt
+        for X, name in mappings[row["id"]].items():  # A, translation_gpt
             if "_" in name:
                 name = name.split("_")[1]
             keys = [
@@ -58,15 +58,15 @@ def remap_columns_handbook(
 
 
 def remap_columns_question(
-    input_csv: str, output_csv: str, mappings: list[dict[str, str]]
+    input_csv: str, output_csv: str, mappings: dict[str, dict[str, str]]
 ):
     with open(input_csv, mode="r", encoding="utf-8") as infile:
         reader = csv.DictReader(infile)
         rows = list(reader)
     remapped_rows: list[dict[str, str]] = []
-    for row, mapping in zip(rows, mappings):
+    for row in rows:
         new_dict = {"id": row["id"]}
-        for X, name in mapping.items():  # A, translation_gpt
+        for X, name in mappings[row["id"]].items():  # A, translation_gpt
             if "_" in name:
                 name = name.split("_")[1]
             keys = [
@@ -112,8 +112,11 @@ for language in ["chinese", "english", "vietnamese"]:
     df = pd.read_csv(  # type: ignore
         f"../output/translation/handbook_evaluation_set_{language}.tsv", sep="\t"
     )
+    id_list: list[str] = df["id"].to_list()
     mapping_list: list[str] = df["mapping"].to_list()
-    mappings: list[dict[str, str]] = [ast.literal_eval(m) for m in mapping_list]
+    mappings: dict[str, dict[str, str]] = {
+        id: ast.literal_eval(m) for id, m in zip(id_list, mapping_list)
+    }
     # llm
     remap_columns_handbook(
         f"../output/evaluation/llm/handbook_evaluation_set_{language}.csv",
@@ -130,8 +133,11 @@ for language in ["chinese", "english", "vietnamese"]:
     df = pd.read_csv(  # type: ignore
         f"../output/translation/question_evaluation_set_{language}.tsv", sep="\t"
     )
+    id_list: list[str] = df["id"].to_list()
     mapping_list: list[str] = df["mapping"].to_list()
-    mappings: list[dict[str, str]] = [ast.literal_eval(m) for m in mapping_list]
+    mappings: dict[str, dict[str, str]] = {
+        id: ast.literal_eval(m) for id, m in zip(id_list, mapping_list)
+    }
     # llm
     remap_columns_question(
         f"../output/evaluation/llm/question_evaluation_set_{language}.csv",
