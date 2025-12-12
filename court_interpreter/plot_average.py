@@ -1,6 +1,7 @@
 # 人手評価と LLM の平均値をプロット
 from collections import defaultdict
 
+import japanize_matplotlib  # noqa: F401
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
@@ -97,17 +98,32 @@ marker_dict = {
     "fluency": "s",
     "question": "D",
 }
+marker_dict_jp = {
+    "省略": "o",
+    "付加": "^",
+    "単語の意味": "v",
+    "流暢性": "s",
+    "疑問文の訳出": "D",
+}
 color_dict = {
     "vietnamese": "red",
     "chinese": "green",
     "english": "blue",
 }
-figure, axes = plt.subplots(1, 2, figsize=(7, 3))
+color_dict_jp = {
+    "ベトナム語": "red",
+    "中国語": "green",
+    "英語": "blue",
+}
+figure, axes = plt.subplots(1, 2, figsize=(6.5, 3))
 for dataset, language_dict in avg_std_dict.items():
     ax = axes[0] if dataset == "handbook" else axes[1]
-    ax.set_title(dataset)
+    if dataset == "handbook":
+        ax.set_title("ハンドブックデータセット")
+    elif dataset == "question":
+        ax.set_title("疑問文データセット")
     ax.set_xlim(-0.5, 1.5)
-    ax.set_xticks([0, 1], ["Human", "LLM"])
+    ax.set_xticks([0, 1], ["人手評価", "LLM-as-a-Judge"])
     for language, metrics_dict in language_dict.items():
         for metrics, stats in metrics_dict.items():
             marker = marker_dict[metrics]
@@ -145,11 +161,11 @@ for dataset, language_dict in avg_std_dict.items():
             Line2D(
                 [0], [0], marker=marker, color="black", linestyle="None", label=label
             )
-            for label, marker in marker_dict.items()
+            for label, marker in marker_dict_jp.items()
         ]
         color_handles = [
             Line2D([0], [0], color=color, label=label)
-            for label, color in color_dict.items()
+            for label, color in color_dict_jp.items()
         ]
 
         # 描画
