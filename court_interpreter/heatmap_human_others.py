@@ -60,7 +60,7 @@ stats_dict = defaultdict(
 )
 
 dataset = "handbook"
-for language in ["english", "chinese", "vietnamese"]:
+for language in ["vietnamese", "chinese", "english"]:
     human_df = pd.read_csv(
         f"../output/evaluation/human/expert/remapped_{dataset}_evaluation_set_{language}.csv"
     )
@@ -148,7 +148,7 @@ for language in ["english", "chinese", "vietnamese"]:
             df_dict[eval][metrics][dataset][language] = new_df.fillna(0)
 
 dataset = "question"
-for language in ["english", "chinese", "vietnamese"]:
+for language in ["vietnamese", "chinese", "english"]:
     human_df = pd.read_csv(
         f"../output/evaluation/human/expert/remapped_{dataset}_evaluation_set_{language}.csv"
     )
@@ -210,6 +210,12 @@ for language in ["english", "chinese", "vietnamese"]:
 # Figure 4. 流暢さ (2x3) -> サイズを2-3倍にする
 # Figure 5. 疑問文 (1x3) -> サイズをxx倍にする
 
+map_language = {
+    "vietnamese": "ベトナム語",
+    "chinese": "中国語",
+    "english": "英語",
+}
+
 for eval, other_info in df_dict.items():
     for metrics, dataset_dict in other_info.items():
         if eval != "comet_ref_free":
@@ -246,14 +252,20 @@ for eval, other_info in df_dict.items():
                         cbar=False,
                     )
                 ax.invert_yaxis()
-                ax.set_title(f"{dataset.capitalize()} - {language.capitalize()}")
+                ax.set_title(map_language[language])
                 ax.set_xticks([v + 0.5 for v in range(len(labels))])
                 ax.set_xticklabels(
                     ["" if i % 2 else str(i / 20) for i in range(len(labels))],
                     rotation=45,
                 )
-                ax.set_xlabel(eval)
-                ax.set_ylabel("人手評価")
+                if cross_tab.shape[0] != 2:
+                    ax.set_yticklabels(range(1, cross_tab.shape[0] + 1))
+                if eval == "comet_ref_free":
+                    ax.set_xlabel("COMET-RF")
+                if language == "vietnamese":
+                    ax.set_ylabel("人手評価")
+                else:
+                    ax.set_ylabel("")
                 plt.yticks(rotation=0)
         figure.tight_layout(h_pad=3.0)
         figure.savefig(f"../output/analysis/heatmap_human_{eval}/heatmap_{metrics}.pdf")
