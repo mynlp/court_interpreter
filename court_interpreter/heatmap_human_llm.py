@@ -29,7 +29,7 @@ def cramers_v(x, y):
     return (v, pval)
 
 
-df_dict = defaultdict(lambda: defaultdict(dict))
+confmat_dict = defaultdict(lambda: defaultdict(dict))
 stats_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
 for dataset in ["handbook", "question"]:
@@ -66,7 +66,7 @@ for dataset in ["handbook", "question"]:
                 if metrics in ["word_meaning", "fluency"]:
                     human_results = human_results * 4
                     llm_results = llm_results * 4
-                df_dict[metrics][dataset][language] = confusion_matrix(
+                confmat_dict[metrics][dataset][language] = confusion_matrix(
                     human_results, llm_results
                 )
                 stats_dict[metrics][dataset][language]["pearson"] = stats.pearsonr(
@@ -116,7 +116,7 @@ for dataset in ["handbook", "question"]:
                 elif metrics in ["question"]:
                     human_results = human_results * 2
                     llm_results = llm_results * 2
-                df_dict[metrics][dataset][language] = confusion_matrix(
+                confmat_dict[metrics][dataset][language] = confusion_matrix(
                     human_results, llm_results
                 )
                 stats_dict[metrics][dataset][language]["pearson"] = stats.pearsonr(
@@ -142,14 +142,20 @@ for dataset in ["handbook", "question"]:
 # Figure 4. 流暢さ (2x3) -> サイズを2-3倍にする
 # Figure 5. 疑問文 (1x3) -> サイズを1.5-2倍にする
 
+map_language = {
+    "vietnamese": "ベトナム語",
+    "chinese": "中国語",
+    "english": "英語",
+}
 
-for metrics, dataset_dict in df_dict.items():
+
+for metrics, dataset_dict in confmat_dict.items():
     if metrics in ["word_meaning", "fluency"]:
         figure = plt.figure(figsize=(8, 6.5))
     elif metrics == "question":
-        figure = plt.figure(figsize=(7, 2.5))
+        figure = plt.figure(figsize=(6.5, 2.5))
     else:
-        figure = plt.figure(figsize=(8, 6))
+        figure = plt.figure(figsize=(5.5, 5))
     for i, (dataset, language_dict) in enumerate(dataset_dict.items()):
         for j, (language, conf_mat) in enumerate(language_dict.items()):
             ax = figure.add_subplot(
@@ -173,10 +179,14 @@ for metrics, dataset_dict in df_dict.items():
                     ax=ax,
                     cbar=False,
                 )
+            if conf_mat.shape[0] != 2:
+                ax.set_xticklabels(range(1, conf_mat.shape[0] + 1))
+                ax.set_yticklabels(range(1, conf_mat.shape[0] + 1))
             ax.invert_yaxis()
-            ax.set_title(f"{dataset.capitalize()} - {language.capitalize()}")
+            ax.set_title(map_language[language])
             ax.set_xlabel("LLM-as-a-Judge")
-            ax.set_ylabel("人手評価")
+            if language == "vietnamese":
+                ax.set_ylabel("人手評価")
             plt.yticks(rotation=0)
     figure.tight_layout(h_pad=3.0)
     figure.savefig(f"../output/analysis/heatmap_human_llm/heatmap_{metrics}.pdf")
