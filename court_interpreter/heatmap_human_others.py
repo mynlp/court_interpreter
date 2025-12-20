@@ -108,6 +108,7 @@ for language in ["vietnamese", "chinese", "english"]:
     )
     comet_ref_free_results = pd.concat(
         [
+            comet_ref_free_df["target"],
             comet_ref_free_df["gpt"],
             comet_ref_free_df["llama"],
             comet_ref_free_df["azure"],
@@ -115,19 +116,29 @@ for language in ["vietnamese", "chinese", "english"]:
     )
     human_df = human_df.astype(str)
     for metrics in ["omission", "addition", "word_meaning", "fluency"]:
-        human_results = pd.concat(
-            [
-                human_df[f"{metrics}_gpt"],
-                human_df[f"{metrics}_llama"],
-                human_df[f"{metrics}_azure"],
-            ]
-        )
         for eval, results in [
             ("bertscore", bertscore_results),
             ("bleu", bleu_results),
             ("comet", comet_results),
             ("comet_ref_free", comet_ref_free_results),
         ]:
+            if eval == "comet_ref_free":
+                human_results = pd.concat(
+                    [
+                        human_df[f"{metrics}_target"],
+                        human_df[f"{metrics}_gpt"],
+                        human_df[f"{metrics}_llama"],
+                        human_df[f"{metrics}_azure"],
+                    ]
+                )
+            else:
+                human_results = pd.concat(
+                    [
+                        human_df[f"{metrics}_gpt"],
+                        human_df[f"{metrics}_llama"],
+                        human_df[f"{metrics}_azure"],
+                    ]
+                )
             # 連続値をそのまま使って相関係数を計算
             stats_dict[eval][metrics][dataset][language]["spearman"] = stats.spearmanr(
                 human_results, results
