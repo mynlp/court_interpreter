@@ -7,6 +7,17 @@ import pandas as pd
 from matplotlib import pyplot as plt
 from matplotlib.lines import Line2D
 
+# Color-blind friendly (okabe-ito) colors
+colors = [
+    "#E69F00",  # orange
+    "#56B4E9",  # sky blue
+    "#009E73",  # bluish green
+    "#F0E442",  # yellow
+    "#0072B2",  # blue
+    "#D55E00",  # vermillion
+    "#CC79A7",  # reddish purple
+]
+
 avg_std_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
 for dataset in ["handbook", "question"]:
@@ -106,14 +117,24 @@ marker_dict_jp = {
     "疑問文の訳出": "D",
 }
 color_dict = {
-    "vietnamese": "red",
-    "chinese": "green",
-    "english": "blue",
+    "vietnamese": colors[0],
+    "chinese": colors[1],
+    "english": colors[2],
 }
 color_dict_jp = {
-    "ベトナム語": "red",
-    "中国語": "green",
-    "英語": "blue",
+    "ベトナム語": colors[0],
+    "中国語": colors[1],
+    "英語": colors[2],
+}
+linestyle_dict = {
+    "vietnamese": "-",
+    "chinese": "--",
+    "english": ":",
+}
+linestyle_dict_jp = {
+    "ベトナム語": "-",
+    "中国語": "--",
+    "英語": ":",
 }
 figure, axes = plt.subplots(1, 2, figsize=(6.5, 3))
 for dataset, language_dict in avg_std_dict.items():
@@ -128,12 +149,15 @@ for dataset, language_dict in avg_std_dict.items():
         for metrics, stats in metrics_dict.items():
             marker = marker_dict[metrics]
             color = color_dict[language]
+            linestyle = linestyle_dict[language]
             ax.plot(
                 [0, 1],
                 [stats["human_avg"], stats["llm_avg"]],
                 marker=marker,
                 color=color,
-                alpha=0.5,
+                linestyle=linestyle,
+                linewidth=2,
+                alpha=0.8,
             )
             # ax.errorbar(
             #     0,
@@ -164,8 +188,14 @@ for dataset, language_dict in avg_std_dict.items():
             for label, marker in marker_dict_jp.items()
         ]
         color_handles = [
-            Line2D([0], [0], color=color, label=label)
-            for label, color in color_dict_jp.items()
+            Line2D(
+                [0],
+                [0],
+                color=color_dict_jp[label],
+                label=label,
+                linestyle=linestyle_dict_jp[label],
+            )
+            for label in color_dict_jp.keys()
         ]
 
         # 描画
