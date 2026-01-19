@@ -1,3 +1,4 @@
+from collections import defaultdict
 from itertools import combinations
 from pathlib import Path
 
@@ -352,3 +353,89 @@ pd.concat(means_all, ignore_index=True).to_csv(
     OUT_DIR / "bootstrap_mean_ci_all_metrics.csv", index=False
 )
 print("done")
+
+# -----------------------------
+# Significance test (human vs. LLM)
+# -----------------------------
+
+result_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
+
+for dataset in ["handbook", "question"]:
+    for language in ["vietnamese", "chinese", "english"]:
+        human_df = pd.read_csv(
+            f"../output/evaluation/human/expert/remapped_{dataset}_evaluation_set_{language}.csv"
+        )
+        llm_df = pd.read_csv(
+            f"../output/evaluation/llm/remapped_{dataset}_evaluation_set_{language}.csv"
+        )
+        llm_df = llm_df[llm_df["id"].isin(human_df["id"])]
+        if dataset == "handbook":
+            for metrics in ["omission", "addition", "word_meaning", "fluency"]:
+                human_results = np.array(
+                    pd.concat(
+                        [
+                            human_df[f"{metrics}_target"],
+                            human_df[f"{metrics}_gpt"],
+                            human_df[f"{metrics}_llama"],
+                            human_df[f"{metrics}_azure"],
+                        ]
+                    )
+                ).astype(float)
+                llm_results = np.array(
+                    pd.concat(
+                        [
+                            llm_df[f"{metrics}_target"],
+                            llm_df[f"{metrics}_gpt"],
+                            llm_df[f"{metrics}_llama"],
+                            llm_df[f"{metrics}_azure"],
+                        ]
+                    )
+                ).astype(float)
+                md, _, _, p = paired_bootstrap_diff_test(
+                    llm_results, human_results, n_boot=N_BOOT_TEST, ci=CI, rng=rng
+                )
+                result_dict[dataset][language][metrics]["mean_diff"] = md
+                result_dict[dataset][language][metrics]["p_value"] = p
+        else:
+            for metrics in [
+                "omission",
+                "addition",
+                "word_meaning",
+                "question",
+                "fluency",
+            ]:
+                human_results = np.array(
+                    pd.concat(
+                        [
+                            human_df[f"{metrics}_gpt"],
+                            human_df[f"{metrics}_llama"],
+                            human_df[f"{metrics}_azure"],
+                        ]
+                    )
+                ).astype(float)
+                llm_results = np.array(
+                    pd.concat(
+                        [
+                            llm_df[f"{metrics}_gpt"],
+                            llm_df[f"{metrics}_llama"],
+                            llm_df[f"{metrics}_azure"],
+                        ]
+                    )
+                ).astype(float)
+                md, _, _, p = paired_bootstrap_diff_test(
+                    llm_results, human_results, n_boot=N_BOOT_TEST, ci=CI, rng=rng
+                )
+                result_dict[dataset][language][metrics]["mean_diff"] = md
+                result_dict[dataset][language][metrics]["p_value"] = p
+
+for dataset, language_dict in result_dict.items():
+    print(f"===Dataset: {dataset}===")
+    for language, metrics_dict in language_dict.items():
+        print(f"Language: {language}")
+        for metrics, res in metrics_dict.items():
+            md = res["mean_diff"]
+            p = res["p_value"]
+            stars = p_to_stars(p)
+            print(
+                f"  Metric: {metrics_name_ja[metrics]}, Mean Diff (LLM - Human): {md:+.4f} {stars} (p={p:.4f})"
+            )
