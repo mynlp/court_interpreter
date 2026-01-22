@@ -39,7 +39,7 @@ N_BOOT_CI = 20000
 N_BOOT_TEST = 50000
 CI = 0.95
 ALPHA = 0.05
-CORRECTION = "none"  # "none" or "holm"
+CORRECTION = "holm"  # "none" or "holm"
 EFFECT_THRESHOLD = 0.0  # ★スターまみれを抑えたいなら 0.05 などに
 RNG_SEED = 12345
 
@@ -428,13 +428,22 @@ for dataset in ["handbook", "question"]:
                 result_dict[dataset][language][metrics]["mean_diff"] = md
                 result_dict[dataset][language][metrics]["p_value"] = p
 
+# holm correction
+for dataset, language_dict in result_dict.items():
+    for language, metrics_dict in language_dict.items():
+        ps = [res["p_value"] for res in metrics_dict.values()]
+        ps_adj = holm_bonferroni(ps)
+        for (metrics, res), pa in zip(metrics_dict.items(), ps_adj):
+            res["p_value_adj"] = pa
+
+
 for dataset, language_dict in result_dict.items():
     print(f"===Dataset: {dataset}===")
     for language, metrics_dict in language_dict.items():
         print(f"Language: {language}")
         for metrics, res in metrics_dict.items():
             md = res["mean_diff"]
-            p = res["p_value"]
+            p = res["p_value_adj"]
             stars = p_to_stars(p)
             print(
                 f"  Metric: {metrics_name_ja[metrics]}, Mean Diff (LLM - Human): {md:+.4f} {stars} (p={p:.4f})"
