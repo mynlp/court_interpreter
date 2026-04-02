@@ -4,6 +4,7 @@
 import ast
 import csv
 
+import japanize_matplotlib  # noqa: F401
 import pandas as pd
 
 
