@@ -8,6 +8,7 @@ from logging import Logger
 from pathlib import Path
 
 import pandas as pd
+from groq import Groq
 from openai import APIConnectionError, OpenAI
 from tqdm import tqdm
 
@@ -102,8 +103,8 @@ def create_system_prompt(
 
 
 def judge(
-    organization: str,
-    api_key: str,
+    client,
+    system: str,
     ids: list[str],
     sources: list[str],
     translations: list[list[str]],
@@ -112,7 +113,6 @@ def judge(
     logger: Logger,
 ) -> list[str]:
     scores: list[str] = []
-    client = OpenAI(organization=organization, api_key=api_key)
     source_language = source_map[language]
     translation_language = language_map[language]
     if question:
@@ -161,7 +161,9 @@ def judge(
         for _ in range(5):  # 最大5回リトライ
             try:
                 completion = client.chat.completions.create(
-                    model="gpt-4.1-mini",
+                    model="gpt-4.1-mini"
+                    if system == "gpt"
+                    else "llama-3.3-70b-versatile",
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_prompt},
@@ -232,11 +234,17 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
     logger.info(args)
     evaluation_path = f"{args.output_dir}/{Path(args.evaluation_set_path).name.replace('.tsv', '.csv')}"
     df = pd.read_csv(args.evaluation_set_path, sep="\t")
+    if args.system == "gpt":
+        client = OpenAI(organization=args.gpt_organization, api_key=args.api_key)
+    elif args.system == "llama":
+        client = Groq(api_key=args.api_key)
+    else:
+        raise ValueError(f"Unsupported system: {args.system}")
     # id  source  translation_A	translation_B	translation_C	translation_D	mapping
     if args.question:
         scores = judge(
-            args.gpt_organization,
-            args.api_key,
+            client,
+            args.system,
             list(df["id"]),
             list(df["source"]),
             [
@@ -250,8 +258,8 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
         )
     else:
         scores = judge(
-            args.gpt_organization,
-            args.api_key,
+            client,
+            args.system,
             list(df["id"]),
             list(df["source"]),
             [
@@ -271,6 +279,9 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--system", required=True, default="gpt", choices=["gpt", "llama"]
+    )
     parser.add_argument("--gpt_organization")
     parser.add_argument("--api_key")
     parser.add_argument(
