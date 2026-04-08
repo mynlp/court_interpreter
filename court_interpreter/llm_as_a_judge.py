@@ -7,9 +7,11 @@ import time
 from logging import Logger
 from pathlib import Path
 
+import groq
 import pandas as pd
 from groq import Groq
-from openai import APIConnectionError, OpenAI
+from openai import APIConnectionError as OpenAIAPIConnectionError
+from openai import OpenAI
 from tqdm import tqdm
 
 from court_interpreter.utils import get_logger
@@ -158,7 +160,8 @@ def judge(
             user_prompt += (
                 f"{translation_language}の文{alphabets[j]}: {translations[j][i]}\n"
             )
-        for _ in range(5):  # 最大5回リトライ
+        score_str = None
+        for retry in range(5):
             try:
                 completion = client.chat.completions.create(
                     model="gpt-4.1-mini"
@@ -172,15 +175,35 @@ def judge(
                 score_str = completion.choices[0].message.content.strip()
                 assert len(score_str.split(",")) == score_num
                 break
-            except APIConnectionError:
-                time.sleep(2)  # avoid rate limit error
+
+            except groq.APIConnectionError as e:
+                if system == "llama":
+                    logger.warning(f"Groq connection error: {e}")
+                    logger.warning(f"Cause: {repr(e.__cause__)}")
+                    logger.warning(f"Retrying... {retry + 1}/5")
+                    time.sleep(2)
+                else:
+                    raise
+
+            except OpenAIAPIConnectionError as e:
+                if system == "gpt":
+                    logger.warning(f"OpenAI connection error: {e}")
+                    logger.warning(f"Retrying... {retry + 1}/5")
+                    time.sleep(2)
+                else:
+                    raise
+
             except AssertionError:
                 logger.warning(f"Invalid score format. {score_str}")
-                logger.warning(f"Retrying... {_ + 1}/5")
+                logger.warning(f"Retrying... {retry + 1}/5")
                 time.sleep(2)
-            if _ == 4:
-                raise ValueError("Failed to get valid score after 5 retries.")
+
+        if score_str is None:
+            logger.warning(f"Failed to get valid score after 5 retries: {id}")
+            continue
+
         scores.append(score_str)
+
     return scores
 
 
@@ -234,13 +257,24 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
     logger.info(args)
     evaluation_path = f"{args.output_dir}/{Path(args.evaluation_set_path).name.replace('.tsv', '.csv')}"
     df = pd.read_csv(args.evaluation_set_path, sep="\t")
+
     if args.system == "gpt":
-        client = OpenAI(organization=args.gpt_organization, api_key=args.api_key)
+        client = OpenAI(
+            organization=args.gpt_organization,
+            api_key=args.api_key,
+            max_retries=5,
+            timeout=30.0,
+        )
     elif args.system == "llama":
-        client = Groq(api_key=args.api_key)
+        client = Groq(
+            api_key=args.api_key,
+            max_retries=5,
+            timeout=30.0,
+        )
     else:
         raise ValueError(f"Unsupported system: {args.system}")
-    # id  source  translation_A	translation_B	translation_C	translation_D	mapping
+
+    # id  source  translation_A translation_B translation_C translation_D mapping
     if args.question:
         scores = judge(
             client,
@@ -272,9 +306,9 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
             args.question,
             logger,
         )
+
     assert len(scores) == len(df)
     write_scores(scores, evaluation_path, args.question)
-    pass
 
 
 if __name__ == "__main__":
@@ -288,7 +322,9 @@ if __name__ == "__main__":
         "--language", default="chinese", choices=["english", "vietnamese", "chinese"]
     )
     parser.add_argument(
-        "--question", type=bool, default=False, help="whether to evaluate question"
+        "--question",
+        action="store_true",
+        help="whether to evaluate question",
     )
     parser.add_argument(
         "--evaluation_set_path",
