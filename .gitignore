@@ -16,7 +16,7 @@ wheels/
 .idea
 
 # Experiment-related files
-secret
+.env
 ocr/
 pdfs/
 dataset_raw/
