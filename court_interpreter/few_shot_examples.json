@@ -1,0 +1,393 @@
+{
+    "handbook": {
+        "chinese": [
+            {
+                "id": "handbook-016",
+                "model": "target",
+                "source": "しかし、場合によっては、10日たつ前に釈放されることもありますし、更に10日以内の日数勾留が延長されることもあります。",
+                "translation": "但是根据情况，有可能不到10天就会被释放，也有可能再延长10天以内的拘留期间。",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 3,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "handbook-100",
+                "model": "target",
+                "source": "ただいまから、あなたをこの事件の証人として尋問しますから、まずうそをつかないという宣誓をしてください。",
+                "translation": "现在开始把你作为这一案件的证人进行询问，先请你宣誓不说谎言。",
+                "scores": {
+                    "omission": 1,
+                    "addition": 0,
+                    "word_meaning": 5,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "handbook-129",
+                "model": "target",
+                "source": "事実は間違いないということですが、この事実について、有罪であるとして処罰されても構わないということですか。",
+                "translation": "你说与事实没有错误，那就是说判你有罪，进行处罚也没有异议对吗?",
+                "scores": {
+                    "omission": 0,
+                    "addition": 0,
+                    "word_meaning": 2,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "handbook-184",
+                "model": "target",
+                "source": "したがって、言い渡した○年○か月の刑から実際には○日間が差し引かれることになります。",
+                "translation": "也就是说，从宣告的○年○个月的刑期中，实际上要减去天。",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 4,
+                    "fluency": 3
+                }
+            },
+            {
+                "id": "handbook-190",
+                "model": "azure",
+                "source": "この判決に不服がある場合には、控訴〈上告〉の申立てをすることができます。",
+                "translation": "如果您对此决定不满意，您可以提出上诉。",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 1,
+                    "fluency": 4
+                }
+            }
+        ],
+        "english": [
+            {
+                "id": "handbook-047",
+                "model": "llama",
+                "source": "まず起訴状が朗読されますから、被告人は聞いていてください。",
+                "translation": "The indictment will be read first, so the defendant should listen.",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 3,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "handbook-165",
+                "model": "target",
+                "source": "これで審理を終わりますが、最後に何か言っておきたいことはありますか。",
+                "translation": "The trial will soon end. Is there anything you wish to say about this case?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 2,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "handbook-176",
+                "model": "azure",
+                "source": "今後◯年間のうちに日本で罪を犯さなければ、刑務所に入らなくてもよくなります。",
+                "translation": "If you don't commit a crime in Japan within the next year, you won't have to go to jail.",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 1,
+                    "fluency": 1
+                }
+            },
+            {
+                "id": "handbook-189",
+                "model": "target",
+                "source": "また、再び犯罪を犯して禁錮以上の刑に処せられた場合には法律上執行猶予を付けることができないので、そのようなことのないよう十分注意してください。",
+                "translation": "Moreover, you would be ineligible for a grant of suspension of execution of sentence if you commit another crime and are sentenced to imprisonment without work or sentenced to a more severe punishment. Therefore, I advise you to remain on good behavior.",
+                "scores": {
+                    "omission": 1,
+                    "addition": 0,
+                    "word_meaning": 4,
+                    "fluency": 3
+                }
+            },
+            {
+                "id": "handbook-191",
+                "model": "target",
+                "source": "その場合には、明日から14日以内に○○高等裁判所<最高裁判所>あての控訴<上告>申立書をこの裁判所に差し出してください。",
+                "translation": "If you choose to appeal, you are advised to write a petition for appeal <final appeal> addressed to the High Court <the Supreme Court) and submit it to this court within a period of 14 days beginning tomorrow.",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 5,
+                    "fluency": 5
+                }
+            }
+        ],
+        "vietnamese": [
+            {
+                "id": "handbook-031",
+                "model": "target",
+                "source": "あなたは、○○国国民として、領事関係に関するウィーン条約第36条第1項(b)の規定により、勾留の事実を○○国領事官に通報することを要求しますか。",
+                "translation": "Quí vị là công dân của nước............, chiếu theo điều 36 mục 1 (b) hiệp ước Vien về quan hệ lãnh sự, quí vị có yêu cầu thông báo việc tạm giam này đến lãnh sự quán của nước............ không?",
+                "scores": {
+                    "omission": 0,
+                    "addition": 0,
+                    "word_meaning": 3,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "handbook-033",
+                "model": "gpt",
+                "source": "なお、領事機関に対しては、我が国の法令に反しない限り、信書を発することができます。",
+                "translation": "Ngoại trừ trường hợp vi phạm pháp luật của nước ta, có thể gửi công văn đến cơ quan lãnh sự.",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 2,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "handbook-101",
+                "model": "llama",
+                "source": "その宣誓書を朗読してください。",
+                "translation": "Hãy đọc to bản tuyên thệ đó.",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 5,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "handbook-141",
+                "model": "azure",
+                "source": "検察官がこの事件に対する意見を述べますので、被告人は聞いていてください。",
+                "translation": "Công tố viên sẽ đưa ra ý kiến của mình về vụ án, vì vậy bị cáo nên lắng nghe.",
+                "scores": {
+                    "omission": 1,
+                    "addition": 0,
+                    "word_meaning": 4,
+                    "fluency": 3
+                }
+            },
+            {
+                "id": "handbook-188",
+                "model": "llama",
+                "source": "保護観察所では、守らなければならない事項について指示されますが、もし、この遵守事項を守らない場合には、この刑の執行猶予を取り消されることがあります。",
+                "translation": "Tại cơ quan thi hành án bảo hộ, sẽ được hướng dẫn về những điều bắt buộc phải tuân守 thì nếu không tuân守 điều này thì việc thi hành án treo có thể bị hủy bỏ.",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 1,
+                    "fluency": 2
+                }
+            }
+        ]
+    },
+    "question": {
+        "chinese": [
+            {
+                "id": "question-01",
+                "model": "llama",
+                "source": "あなたがその場にいなかったのは事実ですよね？",
+                "translation": "你当时不在场这是事实吧？",
+                "scores": {
+                    "omission": 1,
+                    "addition": 0,
+                    "word_meaning": 5,
+                    "question": 2,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "question-05",
+                "model": "azure",
+                "source": "この事件の重要性は理解されていますよね？",
+                "translation": "这个案子的重要性是可以理解的，对吧？",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 2,
+                    "question": 2,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "question-11",
+                "model": "azure",
+                "source": "この調査は十分に行われていなかったのではありませんか？",
+                "translation": "这项研究还不够吗？",
+                "scores": {
+                    "omission": 0,
+                    "addition": 0,
+                    "word_meaning": 1,
+                    "question": 1,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "question-39",
+                "model": "gpt",
+                "source": "被告人のアリバイが成立しないということは明らかではないですか？",
+                "translation": "被告人的不在证明不成立不是显而易见的吗？",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 4,
+                    "question": 3,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "question-43",
+                "model": "gpt",
+                "source": "被告人はその現場にいなかったのではありませんか？",
+                "translation": "被告不在现场吗？",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 3,
+                    "question": 1,
+                    "fluency": 4
+                }
+            }
+        ],
+        "english": [
+            {
+                "id": "question-01",
+                "model": "gpt",
+                "source": "あなたがその場にいなかったのは事実ですよね？",
+                "translation": "It is a fact that you were not at the scene, isn't it?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 0,
+                    "word_meaning": 4,
+                    "question": 2,
+                    "fluency": 4
+                }
+            },
+            {
+                "id": "question-47",
+                "model": "gpt",
+                "source": "弁護士が提出した資料は全て確認済みではないですか？",
+                "translation": "Hasn't all the material submitted by the lawyer been checked?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 5,
+                    "question": 3,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "question-39",
+                "model": "llama",
+                "source": "被告人のアリバイが成立しないということは明らかではないですか？",
+                "translation": "Is it not clear that the defendant's alibi does not hold up?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 2,
+                    "question": 1,
+                    "fluency": 2
+                }
+            },
+            {
+                "id": "question-13",
+                "model": "azure",
+                "source": "その点については異論の余地がないですよね？",
+                "translation": "There's no disputing that, right?",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 1,
+                    "question": 1,
+                    "fluency": 1
+                }
+            },
+            {
+                "id": "question-47",
+                "model": "azure",
+                "source": "弁護士が提出した資料は全て確認済みではないですか？",
+                "translation": "Have you checked all the materials submitted by your lawyer?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 0,
+                    "word_meaning": 3,
+                    "question": 2,
+                    "fluency": 4
+                }
+            }
+        ],
+        "vietnamese": [
+            {
+                "id": "question-45",
+                "model": "gpt",
+                "source": "被告人にはアリバイがないのですか？",
+                "translation": "Bị cáo không có chứng cứ ngoại phạm sao?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                    "word_meaning": 5,
+                    "question": 3,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "question-09",
+                "model": "llama",
+                "source": "この証拠は確実ではないんですよね？",
+                "translation": "Bằng chứng này chắc chắn không phải là như vậy chứ?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 0,
+                    "word_meaning": 1,
+                    "question": 1,
+                    "fluency": 3
+                }
+            },
+            {
+                "id": "question-17",
+                "model": "llama",
+                "source": "もし被告人が本当に有罪なら、なぜこれほど多くの疑問点が残るのでしょうか？",
+                "translation": "Nếu bị cáo thật sự có tội thì tại sao lại còn nhiều điểm đáng ngờ như vậy?",
+                "scores": {
+                    "omission": 0,
+                    "addition": 0,
+                    "word_meaning": 4,
+                    "question": 3,
+                    "fluency": 5
+                }
+            },
+            {
+                "id": "question-05",
+                "model": "azure",
+                "source": "この事件の重要性は理解されていますよね？",
+                "translation": "Tầm quan trọng của trường hợp này đã được hiểu rõ, phải không?",
+                "scores": {
+                    "omission": 1,
+                    "addition": 1,
+                "word_meaning": 3,
+                "question": 2,
+                "fluency": 3
+                }
+            },
+            {
+                "id": "question-15",
+                "model": "azure",
+                "source": "その日の出来事についての詳細はあまりにも不明確ではないですか？",
+                "translation": "Chi tiết về các sự kiện trong ngày không quá rõ ràng sao?",
+                "scores": {
+                    "omission": 0,
+                    "addition": 1,
+                    "word_meaning": 2,
+                    "question": 1,
+                    "fluency": 4
+                }
+            }
+        ]
+    }
+}

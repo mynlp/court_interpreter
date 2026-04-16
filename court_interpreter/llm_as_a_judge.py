@@ -2,6 +2,7 @@
 # Running this script generates `../output/evaluation/llm/{evaluation_set_name}.tsv`
 
 import argparse
+import json
 import os
 import time
 from logging import Logger
@@ -9,12 +10,15 @@ from pathlib import Path
 
 import groq
 import pandas as pd
+from dotenv import load_dotenv
 from groq import Groq
 from openai import APIConnectionError as OpenAIAPIConnectionError
 from openai import OpenAI
 from tqdm import tqdm
 
 from court_interpreter.utils import get_logger
+
+load_dotenv()
 
 # NLP2025 version
 # source_map = {
@@ -31,6 +35,13 @@ language_map = {
     "english": "英語",
     "vietnamese": "ベトナム語",
     "chinese": "中国語（簡体字）",
+}
+metrics_map = {
+    "omission": "省略",
+    "addition": "付加",
+    "word_meaning": "単語の意味",
+    "fluency": "流暢性",
+    "question": "質問",
 }
 
 
@@ -104,6 +115,40 @@ def create_system_prompt(
     )
 
 
+def generate_user_prompt(
+    translations,
+    source_language,
+    translation_language,
+    ids,
+    sources,
+    i,
+    few_shot_examples,
+):
+    id = ids[i]
+    s = sources[i]
+    user_prompt = ""
+    if len(few_shot_examples):
+        user_prompt += "以下は評価例です。\n\n"
+        for ex_id, example in enumerate(few_shot_examples, 1):
+            user_prompt += f"[Example {ex_id}]\n"
+            example_source = example["source"]
+            user_prompt += f"{source_language}の文: {example_source}\n"
+            example_translation = example["translation"]
+            user_prompt += f"{translation_language}の文: {example_translation}\n"
+            for metric, score in example["scores"].items():
+                user_prompt += f"{metrics_map[metric]}: {score}\n"
+            user_prompt += "\n"
+        user_prompt += "----\n\n"
+        user_prompt += "では、次を評価してください。\n\n"
+    user_prompt += f"id: {id}\n{source_language}の文: {s}\n"
+    alphabets = ["A", "B", "C", "D"]
+    for j in range(len(translations)):  # handbook -> 4, question -> 3
+        user_prompt += (
+            f"{translation_language}の文{alphabets[j]}: {translations[j][i]}\n"
+        )
+    return user_prompt
+
+
 def judge(
     client,
     system: str,
@@ -111,6 +156,7 @@ def judge(
     sources: list[str],
     translations: list[list[str]],
     language: str,
+    few_shot_examples: list[dict],
     question: bool,
     logger: Logger,
 ) -> list[str]:
@@ -152,14 +198,15 @@ def judge(
     )
     logger.info(system_prompt)
     for i in tqdm(range(len(ids))):
-        id = ids[i]
-        s = sources[i]
-        user_prompt = f"id: {id}\n{source_language}の文: {s}\n"
-        alphabets = ["A", "B", "C", "D"]
-        for j in range(len(translations)):
-            user_prompt += (
-                f"{translation_language}の文{alphabets[j]}: {translations[j][i]}\n"
-            )
+        user_prompt = generate_user_prompt(
+            translations,
+            source_language,
+            translation_language,
+            ids,
+            sources,
+            i,
+            few_shot_examples,
+        )
         score_str = None
         for retry in range(5):
             try:
@@ -257,17 +304,27 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
     logger.info(args)
     evaluation_path = f"{args.output_dir}/{Path(args.evaluation_set_path).name.replace('.tsv', '.csv')}"
     df = pd.read_csv(args.evaluation_set_path, sep="\t")
+    if args.few_shot:
+        with open("few_shot_examples.json") as f:
+            few_shot_examples_all = json.load(f)
+            dataset = "question" if args.question else "handbook"
+            few_shot_examples = few_shot_examples_all[dataset][args.language]
+        few_shot_ids = [example["id"] for example in few_shot_examples]
+        # remove few_shot_ids examples from df
+        df = df[~df["id"].isin(few_shot_ids)].reset_index(drop=True)
+    else:
+        few_shot_examples = []
 
     if args.system == "gpt":
         client = OpenAI(
-            organization=args.gpt_organization,
-            api_key=args.api_key,
+            organization=os.getenv("OPENAI_ORGANIZATION"),
+            api_key=os.getenv("OPENAI_API_KEY"),
             max_retries=5,
             timeout=30.0,
         )
     elif args.system == "llama":
         client = Groq(
-            api_key=args.api_key,
+            api_key=os.getenv("GROQ_API_KEY"),
             max_retries=5,
             timeout=30.0,
         )
@@ -287,6 +344,7 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
                 list(df["translation_C"]),
             ],
             args.language,
+            few_shot_examples,
             args.question,
             logger,
         )
@@ -303,6 +361,7 @@ def main(args: argparse.Namespace, logger: Logger) -> None:
                 list(df["translation_D"]),
             ],
             args.language,
+            few_shot_examples,
             args.question,
             logger,
         )
@@ -316,8 +375,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "--system", required=True, default="gpt", choices=["gpt", "llama"]
     )
-    parser.add_argument("--gpt_organization")
-    parser.add_argument("--api_key")
     parser.add_argument(
         "--language", default="chinese", choices=["english", "vietnamese", "chinese"]
     )
@@ -325,6 +382,11 @@ if __name__ == "__main__":
         "--question",
         action="store_true",
         help="whether to evaluate question",
+    )
+    parser.add_argument(
+        "--few_shot",
+        action="store_true",
+        help="whether to use fewshot prompting",
     )
     parser.add_argument(
         "--evaluation_set_path",
